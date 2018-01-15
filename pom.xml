@@ -17,13 +17,6 @@
 	<module>tc-osgi-bundle-fwmetamodel-commands-interfaces</module>
 	<module>tc-osgi-bundle-fwmetamodel-core</module>
 	<module>tc-osgi-bundle-fwmetamodel-commands</module>
-      <module>tc-osgi-bundle-nimble-modeling-ATL</module>
-  <module>tc-osgi-bundle-nimble-modeling-babel</module>
-  <module>tc-osgi-bundle-nimble-modeling-metamodels</module>
-  <module>tc-osgi-bundle-nimble-modeling-metamodels-edit</module>
-  <module>tc-osgi-bundle-nimble-modeling-metamodels-editor</module>
-  <module>tc-osgi-bundle-nimble-modeling-sintaks</module>
-  <module>tc-osgi-bundle-nimble-modeling-xpand</module>
    </modules>
   
   
