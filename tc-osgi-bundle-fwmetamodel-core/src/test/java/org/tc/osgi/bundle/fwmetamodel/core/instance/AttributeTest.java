@@ -2,7 +2,9 @@ package org.tc.osgi.bundle.fwmetamodel.core.instance;
 
 import org.junit.Assert;
 import org.junit.Test;
+import org.tc.osgi.bundle.fwmetamodel.core.module.service.LoggerServiceProxy;
 import org.tc.osgi.bundle.fwmetamodel.core.type.MetaAttribute;
+import org.tc.osgi.bundle.utils.module.service.impl.LoggerUtilsServiceImpl;
 
 /**
  * AttributeTest.java.
@@ -20,6 +22,8 @@ public class AttributeTest {
 	@Test
 	public void testAttributeMetaAttribute() {
 
+		LoggerServiceProxy.getInstance().setService(new LoggerUtilsServiceImpl());
+		
 		final MetaAttribute<Integer> at1 = new MetaAttribute<Integer>("Integer", 0);
 		final MetaAttribute<Double> at2 = new MetaAttribute<Double>("Float", 0.0);
 

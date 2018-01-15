@@ -2,9 +2,11 @@ package org.tc.osgi.bundle.fwmetamodel.core.instance;
 
 import org.junit.Assert;
 import org.junit.Test;
+import org.tc.osgi.bundle.fwmetamodel.core.module.service.LoggerServiceProxy;
 import org.tc.osgi.bundle.fwmetamodel.core.type.MetaAttribute;
 import org.tc.osgi.bundle.fwmetamodel.core.type.MetaEntity;
 import org.tc.osgi.bundle.fwmetamodel.core.type.MetaRelation;
+import org.tc.osgi.bundle.utils.module.service.impl.LoggerUtilsServiceImpl;
 
 /**
  * RelationTest.java.
@@ -20,6 +22,7 @@ public class RelationTest {
 	 */
 	@Test
 	public void testRelationEntiteAttribute() {
+		LoggerServiceProxy.getInstance().setService(new LoggerUtilsServiceImpl());
 		// Definition les elements du metamodel
 		final MetaRelation re1 = new MetaRelation("Route");
 		final MetaRelation re2 = new MetaRelation("Autoroute");

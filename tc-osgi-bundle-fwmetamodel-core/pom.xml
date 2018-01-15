@@ -13,6 +13,7 @@
 		<build>0.1.0</build>
 		<snapshot>-SNAPSHOT</snapshot>
 		<utils.interfaces.version>0.1.0</utils.interfaces.version>
+		<utils.version>0.3.0</utils.version>
 		<fwmetamodel.core.interfaces.version>0.1.0</fwmetamodel.core.interfaces.version>
 	</properties>
 
@@ -31,6 +32,13 @@
 			<classifier>assembly</classifier>
 			<version>${utils.interfaces.version}${snapshot}</version>
 			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.tc.osgi.bundle.utils</groupId>
+			<artifactId>tc-osgi-bundle-utils</artifactId>
+			<classifier>assembly</classifier>
+			<version>${utils.version}${snapshot}</version>
+			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.tc.osgi.bundle.fwmetamodel</groupId>
