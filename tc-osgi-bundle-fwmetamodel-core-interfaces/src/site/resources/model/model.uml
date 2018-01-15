@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_Ch_9cKhoEeKkyL6Y6ZIETg" name="tc-osgi-bundle-fwmetamodel-core">
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_CiVUoKhoEeKkyL6Y6ZIETg" name="boolean"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_CiXJ0KhoEeKkyL6Y6ZIETg" name="byte"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_CiXw4KhoEeKkyL6Y6ZIETg" name="char"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_CiXw4ahoEeKkyL6Y6ZIETg" name="double"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_CiXw4qhoEeKkyL6Y6ZIETg" name="float"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_CiYX8KhoEeKkyL6Y6ZIETg" name="int"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_CiYX8ahoEeKkyL6Y6ZIETg" name="long"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_CiYX8qhoEeKkyL6Y6ZIETg" name="short"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_CjHXwKhoEeKkyL6Y6ZIETg" name="org">
+    <packagedElement xmi:type="uml:Package" xmi:id="_CjHXwahoEeKkyL6Y6ZIETg" name="tc">
+      <packagedElement xmi:type="uml:Package" xmi:id="_CjH-0KhoEeKkyL6Y6ZIETg" name="osgi">
+        <packagedElement xmi:type="uml:Package" xmi:id="_CjH-0ahoEeKkyL6Y6ZIETg" name="bundle">
+          <packagedElement xmi:type="uml:Package" xmi:id="_CjH-0qhoEeKkyL6Y6ZIETg" name="fwmetamodel">
+            <packagedElement xmi:type="uml:Package" xmi:id="_CjH-06hoEeKkyL6Y6ZIETg" name="core">
+              <packagedElement xmi:type="uml:Package" xmi:id="_CjH-1KhoEeKkyL6Y6ZIETg" name="exception">
+                <packagedElement xmi:type="uml:Class" xmi:id="_Cjo8MKhoEeKkyL6Y6ZIETg" name="MetaIteratorException">
+                  <generalization xmi:id="_Cl3JwKhoEeKkyL6Y6ZIETg" general="_Clv1AKhoEeKkyL6Y6ZIETg"/>
+                  <ownedAttribute xmi:id="_CmI2kKhoEeKkyL6Y6ZIETg" name="serialVersionUID" visibility="private" type="_CiYX8ahoEeKkyL6Y6ZIETg"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_CjqxYKhoEeKkyL6Y6ZIETg" name="InstanceIteratorException">
+                  <generalization xmi:id="_CmJdoKhoEeKkyL6Y6ZIETg" general="_Clv1AKhoEeKkyL6Y6ZIETg"/>
+                  <ownedAttribute xmi:id="_CmJdoahoEeKkyL6Y6ZIETg" name="serialVersionUID" visibility="private" type="_CiYX8ahoEeKkyL6Y6ZIETg"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:DataType" xmi:id="_Clv1AKhoEeKkyL6Y6ZIETg" name="Exception"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Package" xmi:id="_CjqxYahoEeKkyL6Y6ZIETg" name="instance">
+                <packagedElement xmi:type="uml:Class" xmi:id="_CjubwKhoEeKkyL6Y6ZIETg" name="Attribute">
+                  <generalization xmi:id="_CmKEsKhoEeKkyL6Y6ZIETg" general="_CkJ5kKhoEeKkyL6Y6ZIETg"/>
+                  <ownedAttribute xmi:id="_CmKrwahoEeKkyL6Y6ZIETg" name="value" visibility="private" type="_CmKrwKhoEeKkyL6Y6ZIETg"/>
+                  <ownedOperation xmi:id="_CmajYKhoEeKkyL6Y6ZIETg" name="toXML" visibility="public">
+                    <ownedParameter xmi:id="_CmajYahoEeKkyL6Y6ZIETg" name="return" type="_CmKrwKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CmifMKhoEeKkyL6Y6ZIETg" name="toString" visibility="public">
+                    <ownedParameter xmi:id="_CmifMahoEeKkyL6Y6ZIETg" name="return" type="_CmKrwKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CmjGQKhoEeKkyL6Y6ZIETg" name="getValue" visibility="public">
+                    <ownedParameter xmi:id="_CmjGQahoEeKkyL6Y6ZIETg" name="return" type="_CmKrwKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CmjtUKhoEeKkyL6Y6ZIETg" name="setValue" visibility="public">
+                    <ownedParameter xmi:id="_CmjtUahoEeKkyL6Y6ZIETg" name="value" type="_CmKrwKhoEeKkyL6Y6ZIETg"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_CjyGIKhoEeKkyL6Y6ZIETg" name="Entity">
+                  <generalization xmi:id="_CmkUYKhoEeKkyL6Y6ZIETg" general="_CkJ5kKhoEeKkyL6Y6ZIETg"/>
+                  <ownedAttribute xmi:id="_CmligKhoEeKkyL6Y6ZIETg" name="attribute" visibility="private" type="_Cmk7cKhoEeKkyL6Y6ZIETg"/>
+                  <ownedOperation xmi:id="_CmligahoEeKkyL6Y6ZIETg" name="toXML" visibility="public">
+                    <ownedParameter xmi:id="_CmligqhoEeKkyL6Y6ZIETg" name="return" type="_CmKrwKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CmmJkKhoEeKkyL6Y6ZIETg" name="toString" visibility="public">
+                    <ownedParameter xmi:id="_CmmJkahoEeKkyL6Y6ZIETg" name="return" type="_CmKrwKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CmmwoKhoEeKkyL6Y6ZIETg" name="getAttribute" visibility="public">
+                    <ownedParameter xmi:id="_CmmwoahoEeKkyL6Y6ZIETg" name="return" type="_Cmk7cKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CmnXsKhoEeKkyL6Y6ZIETg" name="getAttributeIterator" visibility="public">
+                    <ownedParameter xmi:id="_CmnXsahoEeKkyL6Y6ZIETg" name="return" type="_CkbmYKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_Cmn-wKhoEeKkyL6Y6ZIETg" name="addAttribute" visibility="public">
+                    <ownedParameter xmi:id="_Cmn-wahoEeKkyL6Y6ZIETg" name="attribute" type="_CjubwKhoEeKkyL6Y6ZIETg"/>
+                    <ownedParameter xmi:id="_Cmn-wqhoEeKkyL6Y6ZIETg" name="return" type="_CiVUoKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_Cj2-oKhoEeKkyL6Y6ZIETg" name="Relation">
+                  <generalization xmi:id="_Cmol0KhoEeKkyL6Y6ZIETg" general="_CkJ5kKhoEeKkyL6Y6ZIETg"/>
+                  <ownedAttribute xmi:id="_CmpM4KhoEeKkyL6Y6ZIETg" name="attributes" visibility="private" type="_Cmk7cKhoEeKkyL6Y6ZIETg"/>
+                  <ownedAttribute xmi:id="_CmwhoKhoEeKkyL6Y6ZIETg" name="entities" visibility="private" type="_Cmk7cKhoEeKkyL6Y6ZIETg"/>
+                  <ownedOperation xmi:id="_CmxIsKhoEeKkyL6Y6ZIETg" name="toXML" visibility="public">
+                    <ownedParameter xmi:id="_CmxIsahoEeKkyL6Y6ZIETg" name="return" type="_CmKrwKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CmxvwKhoEeKkyL6Y6ZIETg" name="toString" visibility="public">
+                    <ownedParameter xmi:id="_CmxvwahoEeKkyL6Y6ZIETg" name="return" type="_CmKrwKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CmyW0KhoEeKkyL6Y6ZIETg" name="getEntityIterator" visibility="public">
+                    <ownedParameter xmi:id="_CmyW0ahoEeKkyL6Y6ZIETg" name="return" type="_CkbmYKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_Cmy94KhoEeKkyL6Y6ZIETg" name="getAttributeIterator" visibility="public">
+                    <ownedParameter xmi:id="_Cmy94ahoEeKkyL6Y6ZIETg" name="return" type="_CkbmYKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_Cmzk8KhoEeKkyL6Y6ZIETg" name="getAttribute" visibility="public">
+                    <ownedParameter xmi:id="_Cmzk8ahoEeKkyL6Y6ZIETg" name="return" type="_Cmk7cKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_Cm0MAKhoEeKkyL6Y6ZIETg" name="getEntity" visibility="public">
+                    <ownedParameter xmi:id="_Cm0MAahoEeKkyL6Y6ZIETg" name="return" type="_Cmk7cKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_Cm1aIKhoEeKkyL6Y6ZIETg" name="addEntity" visibility="public">
+                    <ownedParameter xmi:id="_Cm1aIahoEeKkyL6Y6ZIETg" name="entity" type="_CjyGIKhoEeKkyL6Y6ZIETg"/>
+                    <ownedParameter xmi:id="_Cm1aIqhoEeKkyL6Y6ZIETg" name="return" type="_CiVUoKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_Cm2BMKhoEeKkyL6Y6ZIETg" name="addAttribute" visibility="public">
+                    <ownedParameter xmi:id="_Cm2BMahoEeKkyL6Y6ZIETg" name="attribute" type="_CjubwKhoEeKkyL6Y6ZIETg"/>
+                    <ownedParameter xmi:id="_Cm2BMqhoEeKkyL6Y6ZIETg" name="return" type="_CiVUoKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_Cj9sUKhoEeKkyL6Y6ZIETg" name="Model">
+                  <generalization xmi:id="_Cm2oQKhoEeKkyL6Y6ZIETg" general="_CkJ5kKhoEeKkyL6Y6ZIETg"/>
+                  <ownedAttribute xmi:id="_Cm3PUKhoEeKkyL6Y6ZIETg" name="attribute" visibility="private" type="_Cmk7cKhoEeKkyL6Y6ZIETg"/>
+                  <ownedAttribute xmi:id="_Cm3PUahoEeKkyL6Y6ZIETg" name="entity" visibility="private" type="_Cmk7cKhoEeKkyL6Y6ZIETg"/>
+                  <ownedAttribute xmi:id="_Cm99AKhoEeKkyL6Y6ZIETg" name="relation" visibility="private" type="_Cmk7cKhoEeKkyL6Y6ZIETg"/>
+                  <ownedOperation xmi:id="_Cm-kEKhoEeKkyL6Y6ZIETg" name="toXML" visibility="public">
+                    <ownedParameter xmi:id="_Cm-kEahoEeKkyL6Y6ZIETg" name="return" type="_CmKrwKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_Cm_LIKhoEeKkyL6Y6ZIETg" name="toString" visibility="public">
+                    <ownedParameter xmi:id="_Cm_LIahoEeKkyL6Y6ZIETg" name="return" type="_CmKrwKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_Cm_yMKhoEeKkyL6Y6ZIETg" name="getEntityIterator" visibility="public">
+                    <ownedParameter xmi:id="_Cm_yMahoEeKkyL6Y6ZIETg" name="return" type="_CkbmYKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CnAZQKhoEeKkyL6Y6ZIETg" name="getAttributeIterator" visibility="public">
+                    <ownedParameter xmi:id="_CnAZQahoEeKkyL6Y6ZIETg" name="return" type="_CkbmYKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CnBnYKhoEeKkyL6Y6ZIETg" name="getRelationIterator" visibility="public">
+                    <ownedParameter xmi:id="_CnBnYahoEeKkyL6Y6ZIETg" name="return" type="_CkbmYKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CnJjMKhoEeKkyL6Y6ZIETg" name="getAttribute" visibility="public">
+                    <ownedParameter xmi:id="_CnJjMahoEeKkyL6Y6ZIETg" name="return" type="_Cmk7cKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CnKKQKhoEeKkyL6Y6ZIETg" name="getEntity" visibility="public">
+                    <ownedParameter xmi:id="_CnKKQahoEeKkyL6Y6ZIETg" name="return" type="_Cmk7cKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CnKxUKhoEeKkyL6Y6ZIETg" name="getRelation" visibility="public">
+                    <ownedParameter xmi:id="_CnKxUahoEeKkyL6Y6ZIETg" name="return" type="_Cmk7cKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CnL_cKhoEeKkyL6Y6ZIETg" name="addEntity" visibility="public">
+                    <ownedParameter xmi:id="_CnL_cahoEeKkyL6Y6ZIETg" name="entity" type="_CjyGIKhoEeKkyL6Y6ZIETg"/>
+                    <ownedParameter xmi:id="_CnL_cqhoEeKkyL6Y6ZIETg" name="return" type="_CiVUoKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CnNNkKhoEeKkyL6Y6ZIETg" name="addRelation" visibility="public">
+                    <ownedParameter xmi:id="_CnNNkahoEeKkyL6Y6ZIETg" name="relation" type="_Cj2-oKhoEeKkyL6Y6ZIETg"/>
+                    <ownedParameter xmi:id="_CnNNkqhoEeKkyL6Y6ZIETg" name="return" type="_CiVUoKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CnPCwKhoEeKkyL6Y6ZIETg" name="addAttribute" visibility="public">
+                    <ownedParameter xmi:id="_CnPCwahoEeKkyL6Y6ZIETg" name="attribute" type="_CjubwKhoEeKkyL6Y6ZIETg"/>
+                    <ownedParameter xmi:id="_CnPCwqhoEeKkyL6Y6ZIETg" name="return" type="_CiVUoKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_CkJ5kKhoEeKkyL6Y6ZIETg" name="Instance">
+                  <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_CkJ5kahoEeKkyL6Y6ZIETg" parameter="_CkJ5kqhoEeKkyL6Y6ZIETg">
+                    <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_CkJ5kqhoEeKkyL6Y6ZIETg" parameteredElement="_CkJ5k6hoEeKkyL6Y6ZIETg">
+                      <ownedParameteredElement xmi:type="uml:Class" xmi:id="_CkJ5k6hoEeKkyL6Y6ZIETg" name="T" templateParameter="_CkJ5kqhoEeKkyL6Y6ZIETg"/>
+                    </ownedParameter>
+                  </ownedTemplateSignature>
+                  <ownedAttribute xmi:id="_CnPp0KhoEeKkyL6Y6ZIETg" name="id" visibility="private" type="_CiYX8KhoEeKkyL6Y6ZIETg"/>
+                  <ownedAttribute xmi:id="_CnPp0ahoEeKkyL6Y6ZIETg" name="type" visibility="private" type="_CkJ5k6hoEeKkyL6Y6ZIETg"/>
+                  <ownedAttribute xmi:id="_CnQQ4KhoEeKkyL6Y6ZIETg" name="name" visibility="private" type="_CmKrwKhoEeKkyL6Y6ZIETg"/>
+                  <ownedOperation xmi:id="_CnVwcKhoEeKkyL6Y6ZIETg" name="toXML" visibility="public" isAbstract="true">
+                    <ownedParameter xmi:id="_CnVwcahoEeKkyL6Y6ZIETg" name="return" type="_CmKrwKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CnWXgKhoEeKkyL6Y6ZIETg" name="getName" visibility="public">
+                    <ownedParameter xmi:id="_CnWXgahoEeKkyL6Y6ZIETg" name="return" type="_CmKrwKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CnW-kKhoEeKkyL6Y6ZIETg" name="setName" visibility="public">
+                    <ownedParameter xmi:id="_CnW-kahoEeKkyL6Y6ZIETg" name="name" type="_CmKrwKhoEeKkyL6Y6ZIETg"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CnYMsKhoEeKkyL6Y6ZIETg" name="setType" visibility="public">
+                    <ownedParameter xmi:id="_CnYMsahoEeKkyL6Y6ZIETg" name="type" type="_CkJ5k6hoEeKkyL6Y6ZIETg"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CnYzwKhoEeKkyL6Y6ZIETg" name="getType" visibility="public">
+                    <ownedParameter xmi:id="_CnYzwahoEeKkyL6Y6ZIETg" name="return" type="_CkJ5k6hoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CnaB4KhoEeKkyL6Y6ZIETg" name="setId" visibility="public">
+                    <ownedParameter xmi:id="_CnaB4ahoEeKkyL6Y6ZIETg" name="cnt" type="_CiYX8KhoEeKkyL6Y6ZIETg"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_Cnao8KhoEeKkyL6Y6ZIETg" name="getId" visibility="public">
+                    <ownedParameter xmi:id="_Cnao8ahoEeKkyL6Y6ZIETg" name="return" type="_CiYX8KhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_Cnb3EKhoEeKkyL6Y6ZIETg" name="toString" visibility="public">
+                    <ownedParameter xmi:id="_Cnb3EahoEeKkyL6Y6ZIETg" name="return" type="_CmKrwKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_ClRT4KhoEeKkyL6Y6ZIETg" name="EntityTest">
+                  <ownedOperation xmi:id="_CqVaEKhoEeKkyL6Y6ZIETg" name="testEntityAttribute" visibility="public"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_ClU-QKhoEeKkyL6Y6ZIETg" name="RelationTest">
+                  <ownedOperation xmi:id="_CqWBIKhoEeKkyL6Y6ZIETg" name="testRelationEntiteAttribute" visibility="public"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_ClkO0KhoEeKkyL6Y6ZIETg" name="ModelTest">
+                  <ownedOperation xmi:id="_CqXPQKhoEeKkyL6Y6ZIETg" name="test" visibility="public"/>
+                  <ownedOperation xmi:id="_CqX2UKhoEeKkyL6Y6ZIETg" name="test2" visibility="public"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_ClnSIKhoEeKkyL6Y6ZIETg" name="AttributeTest">
+                  <ownedOperation xmi:id="_CqZEcKhoEeKkyL6Y6ZIETg" name="testAttributeMetaAttribute" visibility="public"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:DataType" xmi:id="_CmKrwKhoEeKkyL6Y6ZIETg" name="String"/>
+                <packagedElement xmi:type="uml:DataType" xmi:id="_Cmk7cKhoEeKkyL6Y6ZIETg" name="List"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Package" xmi:id="_CkNj8KhoEeKkyL6Y6ZIETg" name="iterator">
+                <packagedElement xmi:type="uml:Class" xmi:id="_CkQnQKhoEeKkyL6Y6ZIETg" name="MetaIterator">
+                  <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_CkQnQahoEeKkyL6Y6ZIETg" parameter="_CkQnQqhoEeKkyL6Y6ZIETg">
+                    <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_CkQnQqhoEeKkyL6Y6ZIETg" parameteredElement="_CkQnQ6hoEeKkyL6Y6ZIETg">
+                      <ownedParameteredElement xmi:type="uml:Class" xmi:id="_CkQnQ6hoEeKkyL6Y6ZIETg" name="T" templateParameter="_CkQnQqhoEeKkyL6Y6ZIETg"/>
+                    </ownedParameter>
+                  </ownedTemplateSignature>
+                  <ownedAttribute xmi:id="_CnlBAKhoEeKkyL6Y6ZIETg" name="iterator" visibility="private" type="_CnkZ8KhoEeKkyL6Y6ZIETg"/>
+                  <ownedOperation xmi:id="_CnlBAahoEeKkyL6Y6ZIETg" name="getIterator" visibility="public">
+                    <ownedParameter xmi:id="_CnlBAqhoEeKkyL6Y6ZIETg" name="return" type="_CnkZ8KhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CnmPIKhoEeKkyL6Y6ZIETg" name="getPosition" visibility="public">
+                    <ownedParameter xmi:id="_CnmPIahoEeKkyL6Y6ZIETg" name="name" type="_CmKrwKhoEeKkyL6Y6ZIETg"/>
+                    <ownedParameter xmi:id="_CnmPIqhoEeKkyL6Y6ZIETg" name="return" type="_CiYX8KhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_Cnm2MKhoEeKkyL6Y6ZIETg" name="hasNext" visibility="public">
+                    <ownedParameter xmi:id="_Cnm2MahoEeKkyL6Y6ZIETg" name="return" type="_CiVUoKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CnndQKhoEeKkyL6Y6ZIETg" name="next" visibility="public">
+                    <ownedParameter xmi:id="_CnndQahoEeKkyL6Y6ZIETg" name="return" type="_CkQnQ6hoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CnorYKhoEeKkyL6Y6ZIETg" name="remove" visibility="public"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_CkbmYKhoEeKkyL6Y6ZIETg" name="InstanceIterator">
+                  <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_CkbmYahoEeKkyL6Y6ZIETg" parameter="_CkbmYqhoEeKkyL6Y6ZIETg">
+                    <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_CkbmYqhoEeKkyL6Y6ZIETg" parameteredElement="_CkbmY6hoEeKkyL6Y6ZIETg">
+                      <ownedParameteredElement xmi:type="uml:Class" xmi:id="_CkbmY6hoEeKkyL6Y6ZIETg" name="T" templateParameter="_CkbmYqhoEeKkyL6Y6ZIETg"/>
+                    </ownedParameter>
+                  </ownedTemplateSignature>
+                  <ownedAttribute xmi:id="_Cnp5gKhoEeKkyL6Y6ZIETg" name="iterator" visibility="private" type="_CnkZ8KhoEeKkyL6Y6ZIETg"/>
+                  <ownedAttribute xmi:id="_CnqgkKhoEeKkyL6Y6ZIETg" name="instances" visibility="private" type="_Cmk7cKhoEeKkyL6Y6ZIETg"/>
+                  <ownedOperation xmi:id="_CnzDcKhoEeKkyL6Y6ZIETg" name="getRelationPosition" visibility="public">
+                    <ownedParameter xmi:id="_CnzDcahoEeKkyL6Y6ZIETg" name="name" type="_CmKrwKhoEeKkyL6Y6ZIETg"/>
+                    <ownedParameter xmi:id="_CnzDcqhoEeKkyL6Y6ZIETg" name="return" type="_CiYX8KhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CnzqgKhoEeKkyL6Y6ZIETg" name="hasNext" visibility="public">
+                    <ownedParameter xmi:id="_CnzqgahoEeKkyL6Y6ZIETg" name="return" type="_CiVUoKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_Cn0RkKhoEeKkyL6Y6ZIETg" name="getIterator" visibility="private">
+                    <ownedParameter xmi:id="_Cn0RkahoEeKkyL6Y6ZIETg" name="return" type="_CnkZ8KhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_Cn04oKhoEeKkyL6Y6ZIETg" name="next" visibility="public">
+                    <ownedParameter xmi:id="_Cn04oahoEeKkyL6Y6ZIETg" name="return" type="_CkbmY6hoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_Cn2GwKhoEeKkyL6Y6ZIETg" name="remove" visibility="public"/>
+                  <ownedOperation xmi:id="_Cn3U4KhoEeKkyL6Y6ZIETg" name="remove" visibility="public">
+                    <ownedParameter xmi:id="_Cn3U4ahoEeKkyL6Y6ZIETg" name="instance" type="_CkbmY6hoEeKkyL6Y6ZIETg"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_Cn5KEKhoEeKkyL6Y6ZIETg" name="add" visibility="public">
+                    <ownedParameter xmi:id="_Cn5KEahoEeKkyL6Y6ZIETg" name="instance" type="_CkbmY6hoEeKkyL6Y6ZIETg"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_Cn_3wKhoEeKkyL6Y6ZIETg" name="getInstanceAt" visibility="public">
+                    <ownedParameter xmi:id="_Cn_3wahoEeKkyL6Y6ZIETg" name="cible" type="_CmKrwKhoEeKkyL6Y6ZIETg"/>
+                    <ownedParameter xmi:id="_Cn_3wqhoEeKkyL6Y6ZIETg" name="return" type="_CkbmY6hoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:DataType" xmi:id="_CnkZ8KhoEeKkyL6Y6ZIETg" name="Iterator"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Package" xmi:id="_CkcNcKhoEeKkyL6Y6ZIETg" name="type">
+                <packagedElement xmi:type="uml:Class" xmi:id="_CkiUEKhoEeKkyL6Y6ZIETg" name="Type">
+                  <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_CkiUEahoEeKkyL6Y6ZIETg" parameter="_CkiUEqhoEeKkyL6Y6ZIETg">
+                    <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_CkiUEqhoEeKkyL6Y6ZIETg" parameteredElement="_Cki7IKhoEeKkyL6Y6ZIETg">
+                      <ownedParameteredElement xmi:type="uml:Class" xmi:id="_Cki7IKhoEeKkyL6Y6ZIETg" name="T" templateParameter="_CkiUEqhoEeKkyL6Y6ZIETg"/>
+                    </ownedParameter>
+                  </ownedTemplateSignature>
+                  <ownedAttribute xmi:id="_CoDiIKhoEeKkyL6Y6ZIETg" name="serialVersionUID" visibility="private" type="_CiYX8ahoEeKkyL6Y6ZIETg"/>
+                  <ownedAttribute xmi:id="_CoEJMKhoEeKkyL6Y6ZIETg" name="name" visibility="private" type="_CmKrwKhoEeKkyL6Y6ZIETg"/>
+                  <ownedAttribute xmi:id="_CoEwQKhoEeKkyL6Y6ZIETg" name="instances" visibility="private" type="_Cmk7cKhoEeKkyL6Y6ZIETg"/>
+                  <ownedAttribute xmi:id="_CoFXUKhoEeKkyL6Y6ZIETg" name="instanceCounter" visibility="private" type="_CiYX8KhoEeKkyL6Y6ZIETg"/>
+                  <ownedAttribute xmi:id="_CoF-YKhoEeKkyL6Y6ZIETg" name="globalCounter" visibility="private" type="_CiYX8KhoEeKkyL6Y6ZIETg"/>
+                  <ownedOperation xmi:id="_CoHMgKhoEeKkyL6Y6ZIETg" name="create" visibility="public" isAbstract="true">
+                    <ownedParameter xmi:id="_CoHMgahoEeKkyL6Y6ZIETg" name="name" type="_CmKrwKhoEeKkyL6Y6ZIETg"/>
+                    <ownedParameter xmi:id="_CoHMgqhoEeKkyL6Y6ZIETg" name="return" type="_Cki7IKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CoQWcKhoEeKkyL6Y6ZIETg" name="delete" visibility="public">
+                    <ownedParameter xmi:id="_CoQWcahoEeKkyL6Y6ZIETg" name="name" type="_CmKrwKhoEeKkyL6Y6ZIETg"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CoRkkKhoEeKkyL6Y6ZIETg" name="toXML" visibility="public" isAbstract="true">
+                    <ownedParameter xmi:id="_CoRkkahoEeKkyL6Y6ZIETg" name="return" type="_CmKrwKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CoSLoKhoEeKkyL6Y6ZIETg" name="getGlobalCounter" visibility="public" isStatic="true">
+                    <ownedParameter xmi:id="_CoSLoahoEeKkyL6Y6ZIETg" name="return" type="_CiYX8KhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CoTZwKhoEeKkyL6Y6ZIETg" name="incGlobalCounter" visibility="protected" isStatic="true"/>
+                  <ownedOperation xmi:id="_CoUn4KhoEeKkyL6Y6ZIETg" name="decGlobalCounter" visibility="protected" isStatic="true"/>
+                  <ownedOperation xmi:id="_CoV2AKhoEeKkyL6Y6ZIETg" name="getName" visibility="public">
+                    <ownedParameter xmi:id="_CoV2AahoEeKkyL6Y6ZIETg" name="return" type="_CmKrwKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_Coe_8KhoEeKkyL6Y6ZIETg" name="setName" visibility="public">
+                    <ownedParameter xmi:id="_Coe_8ahoEeKkyL6Y6ZIETg" name="name" type="_CmKrwKhoEeKkyL6Y6ZIETg"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CogOEKhoEeKkyL6Y6ZIETg" name="getInstanceCounter" visibility="public">
+                    <ownedParameter xmi:id="_CogOEahoEeKkyL6Y6ZIETg" name="return" type="_CiYX8KhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CohcMKhoEeKkyL6Y6ZIETg" name="getInstanceIterator" visibility="public">
+                    <ownedParameter xmi:id="_CohcMahoEeKkyL6Y6ZIETg" name="return" type="_CkbmYKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CojRYKhoEeKkyL6Y6ZIETg" name="getInstances" visibility="public">
+                    <ownedParameter xmi:id="_CojRYahoEeKkyL6Y6ZIETg" name="return" type="_Cmk7cKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CokfgKhoEeKkyL6Y6ZIETg" name="toString" visibility="public">
+                    <ownedParameter xmi:id="_CokfgahoEeKkyL6Y6ZIETg" name="return" type="_CmKrwKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_CkvIYKhoEeKkyL6Y6ZIETg" name="MetaRelation">
+                  <generalization xmi:id="_ColtoKhoEeKkyL6Y6ZIETg" general="_CkiUEKhoEeKkyL6Y6ZIETg"/>
+                  <ownedAttribute xmi:id="_CotpcKhoEeKkyL6Y6ZIETg" name="serialVersionUID" visibility="private" type="_CiYX8ahoEeKkyL6Y6ZIETg"/>
+                  <ownedAttribute xmi:id="_CouQgKhoEeKkyL6Y6ZIETg" name="metaAttributes" visibility="private" type="_Cmk7cKhoEeKkyL6Y6ZIETg"/>
+                  <ownedAttribute xmi:id="_Cou3kKhoEeKkyL6Y6ZIETg" name="metaEntity" visibility="private" type="_Cmk7cKhoEeKkyL6Y6ZIETg"/>
+                  <ownedOperation xmi:id="_CowFsKhoEeKkyL6Y6ZIETg" name="create" visibility="public">
+                    <ownedParameter xmi:id="_CowFsahoEeKkyL6Y6ZIETg" name="name" type="_CmKrwKhoEeKkyL6Y6ZIETg"/>
+                    <ownedParameter xmi:id="_CowFsqhoEeKkyL6Y6ZIETg" name="return" type="_Cj2-oKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_Cox64KhoEeKkyL6Y6ZIETg" name="addMetaAttribute" visibility="public">
+                    <ownedParameter xmi:id="_Cox64ahoEeKkyL6Y6ZIETg" name="meta" type="_Ck9K0KhoEeKkyL6Y6ZIETg"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CozJAKhoEeKkyL6Y6ZIETg" name="addMetaEntity" visibility="public">
+                    <ownedParameter xmi:id="_CozJAahoEeKkyL6Y6ZIETg" name="meta" type="_CkyywKhoEeKkyL6Y6ZIETg"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CozwEKhoEeKkyL6Y6ZIETg" name="toXML" visibility="public">
+                    <ownedParameter xmi:id="_Co0XIKhoEeKkyL6Y6ZIETg" name="return" type="_CmKrwKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_Co8S8KhoEeKkyL6Y6ZIETg" name="toString" visibility="public">
+                    <ownedParameter xmi:id="_Co8S8ahoEeKkyL6Y6ZIETg" name="return" type="_CmKrwKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_Co9hEKhoEeKkyL6Y6ZIETg" name="getMetaAttributeIterator" visibility="public">
+                    <ownedParameter xmi:id="_Co9hEahoEeKkyL6Y6ZIETg" name="return" type="_CnkZ8KhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_Co_WQKhoEeKkyL6Y6ZIETg" name="getMetaEntityIterator" visibility="public">
+                    <ownedParameter xmi:id="_Co_WQahoEeKkyL6Y6ZIETg" name="return" type="_CnkZ8KhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CpAkYKhoEeKkyL6Y6ZIETg" name="getMetaAttributes" visibility="public">
+                    <ownedParameter xmi:id="_CpAkYahoEeKkyL6Y6ZIETg" name="return" type="_Cmk7cKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CpBygKhoEeKkyL6Y6ZIETg" name="getMetaEntity" visibility="public">
+                    <ownedParameter xmi:id="_CpBygahoEeKkyL6Y6ZIETg" name="return" type="_Cmk7cKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_CkyywKhoEeKkyL6Y6ZIETg" name="MetaEntity">
+                  <generalization xmi:id="_CpKVYKhoEeKkyL6Y6ZIETg" general="_CkiUEKhoEeKkyL6Y6ZIETg"/>
+                  <ownedAttribute xmi:id="_CpK8cKhoEeKkyL6Y6ZIETg" name="serialVersionUID" visibility="private" type="_CiYX8ahoEeKkyL6Y6ZIETg"/>
+                  <ownedAttribute xmi:id="_CpLjgKhoEeKkyL6Y6ZIETg" name="metaAttributes" visibility="private" type="_Cmk7cKhoEeKkyL6Y6ZIETg"/>
+                  <ownedOperation xmi:id="_CpMxoKhoEeKkyL6Y6ZIETg" name="create" visibility="public">
+                    <ownedParameter xmi:id="_CpMxoahoEeKkyL6Y6ZIETg" name="name" type="_CmKrwKhoEeKkyL6Y6ZIETg"/>
+                    <ownedParameter xmi:id="_CpMxoqhoEeKkyL6Y6ZIETg" name="return" type="_CjyGIKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CpN_wKhoEeKkyL6Y6ZIETg" name="toXML" visibility="public">
+                    <ownedParameter xmi:id="_CpN_wahoEeKkyL6Y6ZIETg" name="return" type="_CmKrwKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CpOm0KhoEeKkyL6Y6ZIETg" name="toString" visibility="public">
+                    <ownedParameter xmi:id="_CpPN4KhoEeKkyL6Y6ZIETg" name="return" type="_CmKrwKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CpQcAKhoEeKkyL6Y6ZIETg" name="addMetaAttribute" visibility="public">
+                    <ownedParameter xmi:id="_CpQcAahoEeKkyL6Y6ZIETg" name="meta" type="_Ck9K0KhoEeKkyL6Y6ZIETg"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CpRDEKhoEeKkyL6Y6ZIETg" name="getMetaAttributes" visibility="public">
+                    <ownedParameter xmi:id="_CpRDEahoEeKkyL6Y6ZIETg" name="return" type="_Cmk7cKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CpZl8KhoEeKkyL6Y6ZIETg" name="getMetaAttributeIterator" visibility="public">
+                    <ownedParameter xmi:id="_CpZl8ahoEeKkyL6Y6ZIETg" name="return" type="_CkQnQKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_Ck9K0KhoEeKkyL6Y6ZIETg" name="MetaAttribute">
+                  <generalization xmi:id="_Cpa0EKhoEeKkyL6Y6ZIETg" general="_CkiUEKhoEeKkyL6Y6ZIETg"/>
+                  <ownedAttribute xmi:id="_CpbbIKhoEeKkyL6Y6ZIETg" name="serialVersionUID" visibility="private" type="_CiYX8ahoEeKkyL6Y6ZIETg"/>
+                  <ownedAttribute xmi:id="_CpcCMKhoEeKkyL6Y6ZIETg" name="defaultValue" visibility="private" type="_CmKrwKhoEeKkyL6Y6ZIETg"/>
+                  <ownedOperation xmi:id="_CpdQUKhoEeKkyL6Y6ZIETg" name="create" visibility="public">
+                    <ownedParameter xmi:id="_CpdQUahoEeKkyL6Y6ZIETg" name="name" type="_CmKrwKhoEeKkyL6Y6ZIETg"/>
+                    <ownedParameter xmi:id="_CpdQUqhoEeKkyL6Y6ZIETg" name="return" type="_CjubwKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CpfFgKhoEeKkyL6Y6ZIETg" name="setDefaultValue" visibility="public">
+                    <ownedParameter xmi:id="_CpfFgahoEeKkyL6Y6ZIETg" name="defaultValue" type="_CmKrwKhoEeKkyL6Y6ZIETg"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CpfskKhoEeKkyL6Y6ZIETg" name="getDefaultValue" visibility="public">
+                    <ownedParameter xmi:id="_CpfskahoEeKkyL6Y6ZIETg" name="return" type="_CmKrwKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CpoPcKhoEeKkyL6Y6ZIETg" name="toXML" visibility="public">
+                    <ownedParameter xmi:id="_CpoPcahoEeKkyL6Y6ZIETg" name="return" type="_CmKrwKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CppdkKhoEeKkyL6Y6ZIETg" name="toString" visibility="public">
+                    <ownedParameter xmi:id="_CppdkahoEeKkyL6Y6ZIETg" name="return" type="_CmKrwKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_ClD4gKhoEeKkyL6Y6ZIETg" name="MetaModel">
+                  <generalization xmi:id="_CpqrsKhoEeKkyL6Y6ZIETg" general="_CkiUEKhoEeKkyL6Y6ZIETg"/>
+                  <ownedAttribute xmi:id="_CprSwKhoEeKkyL6Y6ZIETg" name="serialVersionUID" visibility="private" type="_CiYX8ahoEeKkyL6Y6ZIETg"/>
+                  <ownedAttribute xmi:id="_Cpr50KhoEeKkyL6Y6ZIETg" name="metaEntities" visibility="private" type="_Cmk7cKhoEeKkyL6Y6ZIETg"/>
+                  <ownedAttribute xmi:id="_Cpsg4KhoEeKkyL6Y6ZIETg" name="metaRelations" visibility="private" type="_Cmk7cKhoEeKkyL6Y6ZIETg"/>
+                  <ownedAttribute xmi:id="_CptvAKhoEeKkyL6Y6ZIETg" name="metaAttributes" visibility="private" type="_Cmk7cKhoEeKkyL6Y6ZIETg"/>
+                  <ownedOperation xmi:id="_Cp2R4KhoEeKkyL6Y6ZIETg" name="create" visibility="public">
+                    <ownedParameter xmi:id="_Cp2R4ahoEeKkyL6Y6ZIETg" name="name" type="_CmKrwKhoEeKkyL6Y6ZIETg"/>
+                    <ownedParameter xmi:id="_Cp2R4qhoEeKkyL6Y6ZIETg" name="return" type="_Cj9sUKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_Cp4HEKhoEeKkyL6Y6ZIETg" name="addMetaAttribute" visibility="public">
+                    <ownedParameter xmi:id="_Cp4HEahoEeKkyL6Y6ZIETg" name="meta" type="_Ck9K0KhoEeKkyL6Y6ZIETg"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_Cp5VMKhoEeKkyL6Y6ZIETg" name="addMetaEntity" visibility="public">
+                    <ownedParameter xmi:id="_Cp5VMahoEeKkyL6Y6ZIETg" name="meta" type="_CkyywKhoEeKkyL6Y6ZIETg"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_Cp7KYKhoEeKkyL6Y6ZIETg" name="addMetaRelation" visibility="public">
+                    <ownedParameter xmi:id="_Cp7KYahoEeKkyL6Y6ZIETg" name="meta" type="_CkvIYKhoEeKkyL6Y6ZIETg"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CqAp8KhoEeKkyL6Y6ZIETg" name="toXML" visibility="public">
+                    <ownedParameter xmi:id="_CqAp8ahoEeKkyL6Y6ZIETg" name="return" type="_CmKrwKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CqB4EKhoEeKkyL6Y6ZIETg" name="toString" visibility="public">
+                    <ownedParameter xmi:id="_CqB4EahoEeKkyL6Y6ZIETg" name="return" type="_CmKrwKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CqDGMKhoEeKkyL6Y6ZIETg" name="getMetaAttributeIterator" visibility="public">
+                    <ownedParameter xmi:id="_CqDGMahoEeKkyL6Y6ZIETg" name="return" type="_CkQnQKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CqEUUKhoEeKkyL6Y6ZIETg" name="getMetaEntityIterator" visibility="public">
+                    <ownedParameter xmi:id="_CqEUUahoEeKkyL6Y6ZIETg" name="return" type="_CkQnQKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CqIlwKhoEeKkyL6Y6ZIETg" name="getMetaRelationIterator" visibility="public">
+                    <ownedParameter xmi:id="_CqIlwahoEeKkyL6Y6ZIETg" name="return" type="_CkQnQKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CqJz4KhoEeKkyL6Y6ZIETg" name="getMetaAttributes" visibility="public">
+                    <ownedParameter xmi:id="_CqJz4ahoEeKkyL6Y6ZIETg" name="return" type="_Cmk7cKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CqLCAKhoEeKkyL6Y6ZIETg" name="getMetaEntities" visibility="public">
+                    <ownedParameter xmi:id="_CqLCAahoEeKkyL6Y6ZIETg" name="return" type="_Cmk7cKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_CqUL8KhoEeKkyL6Y6ZIETg" name="getMetaRelations" visibility="public">
+                    <ownedParameter xmi:id="_CqUL8ahoEeKkyL6Y6ZIETg" name="return" type="_Cmk7cKhoEeKkyL6Y6ZIETg" direction="return"/>
+                  </ownedOperation>
+                </packagedElement>
+              </packagedElement>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

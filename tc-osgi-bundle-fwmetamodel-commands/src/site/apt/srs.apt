@@ -1,0 +1,25 @@
+Framework Metamodelisation - COMMANDS Specification version 0.0.1
+
+* Commands
+
+** @req SRS_BUNDLE_FWMETAMODEL_COMMANDS_010
+
+  Le framework fourni les primitive necessaire a la constuction de metamodel
+  
+        * @version 0.0.1
+        
+        * @track SRS_BUNDLE_FWMETAMODEL_010
+
+** @req SRS_BUNDLE_FWMETAMODEL_COMMANDS_020
+
+  Le framework fourni les primitive necessaire a la constuction de model
+  
+        * @version 0.0.1
+        
+        * @track SRS_BUNDLE_FWMETAMODEL_010
+
+** @req SRS_BUNDLE_FWMETAMODEL_COMMANDS_030
+
+  Les primitives se basent sur un jeu de commande
+  
+        * @version 0.0.1  

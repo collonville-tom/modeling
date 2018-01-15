@@ -1,0 +1,5 @@
+Introduction
+
+  Le projet fwmetamodel-core a pour but de fournir un meta-meta-modele pour construire des meta-modeles et leur modeles associés.
+  
+  Le meta-meta-modele utilisé est ERA (Entity-Relation-Role)

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="idModel" name="fwmetaCoponentModel">
+  <packagedElement xmi:type="uml:Package" xmi:id="idPackage" name="fwmetaCoponentPackage">
+    <packagedElement xmi:type="uml:Component" xmi:id="idComponent" name="fwmetaCoponentComponent">
+      <nestedClassifier xmi:type="uml:Component" xmi:id="_0eSxIKhyEeKaD4YqlFgJwg" name="Core"/>
+      <nestedClassifier xmi:type="uml:Component" xmi:id="_1v-bcKhyEeKaD4YqlFgJwg" name="Command"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_4PaSUqhyEeKaD4YqlFgJwg" name="Dependency1" client="_1v-bcKhyEeKaD4YqlFgJwg" supplier="_0eSxIKhyEeKaD4YqlFgJwg"/>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

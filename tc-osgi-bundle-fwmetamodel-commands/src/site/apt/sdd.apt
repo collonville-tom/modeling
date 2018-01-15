@@ -1,0 +1,41 @@
+Framework Metamodelisation - COMMANDS Specification version 0.0.1
+
+* Commands
+
+** @req SDD_BUNDLE_FWMETAMODEL_COMMANDS_010
+
+  Le framework implemente le pattern commande pour produire des jeux d'instruction de creation des modeles et des meta-modeles
+  
+        * @version 0.0.1
+        
+        * @track SRS_BUNDLE_FWMETAMODEL_COMMANDS_010, SRS_BUNDLE_FWMETAMODEL_COMMANDS_020, SRS_BUNDLE_FWMETAMODEL_COMMANDS_030, SDD_BUNDLE_FWMETAMODEL_010
+
+=====================
+
+[model/No name.jpg] 
+
+=====================
+
+[model/unnamed.jpg] 
+
+=====================
+
+[model/unnamed1.jpg] 
+
+=====================
+
+[model/unnamed2.jpg] 
+
+=====================
+
+[model/unnamed3.jpg]
+
+=====================
+
+[model/unnamed4.jpg]
+
+=====================
+
+[model/unnamed5.jpg] 
+
+  Le package IO est deprecié.

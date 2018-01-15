@@ -1,0 +1,15 @@
+Framework Metamodelisation Software Design Description
+
+* Composition
+
+** @req SDD_FWMETAMODEL_010
+
+  Le composant se subdivise en deux cots l'un pour le metamodele du modele era et un second pour fournir des primitives de manipulation
+  
+        * @version 0.0.1
+        
+        * @track SRS_FWMETAMODEL_010
+
+=====================
+
+[model/fwmetaCoponent.jpg] Composant du framework

@@ -1,0 +1,89 @@
+Framework Metamodelisation CORE Specification version 0.0.2 
+
+=====================
+
+[model/No name.jpg] Package du projet
+
+* Core
+
+** @req SDD_BUNDLE_FWMETAMODEL_CORE_010
+
+  Le framework implemente le pattern Type/Instance
+  
+        * @version 0.0.1
+        
+        * @track SRS_BUNDLE_FWMETAMODEL_CORE_010
+
+* Type
+
+** @req SDD_BUNDLE_FWMETAMODEL_CORE_020
+
+  Le bundle definit les classes Types et de meta-modeles des concepts ERA. 
+  
+        * @version 0.0.1
+        
+        * @track SRS_BUNDLE_FWMETAMODEL_CORE_010, SDD_BUNDLE_FWMETAMODEL_010
+   
+=====================
+       
+[model/unnamed.jpg] Package Type
+
+** @req SDD_BUNDLE_FWMETAMODEL_CORE_025
+
+  Le bundle utils est utilisé pour produire les logs de suivi de creation et d'ajout d'element au modele 
+  
+        * @version 0.0.2
+        
+        * @track SRS_BUNDLE_FWMETAMODEL_CORE_040
+        
+        * @depend SDD_BUNDLE_UTILS_030
+
+* Instance
+
+** @req SDD_BUNDLE_FWMETAMODEL_CORE_030
+
+  Le bundle definit les classes Instance et de modeles des concepts ERA. 
+  
+        * @version 0.0.1
+        
+        * @track SRS_BUNDLE_FWMETAMODEL_CORE_010
+
+=====================
+
+[model/unnamed2.jpg] Instance Type
+  
+* Iterator
+
+** @req SDD_BUNDLE_FWMETAMODEL_CORE_040
+
+    Le bundle utilise des iterateurs pour facilité l'exploration des elements des modeles et verifier l'integrité des associations.
+  
+        * @version 0.0.2
+  
+        * @track SRS_BUNDLE_FWMETAMODEL_CORE_030
+ 
+=====================
+        
+[model/unnamed1.jpg] Package Iterateur
+
+* Exception
+
+** @req SDD_BUNDLE_FWMETAMODEL_CORE_050
+
+  Le bundle defini les exceptions liés a l'iteration sur les instances ou les elements du modele
+  
+        * @version 0.0.2
+
+=====================
+
+[model/unnamed3.jpg] Package Exception
+
+* Serialisation
+
+** @req SDD_BUNDLE_FWMETAMODEL_CORE_060
+
+  Le bundle utils est utilisé afin de serialisé les modeles en xml.
+  
+        * @version 0.0.1
+        
+        * @depend SDD_BUNDLE_UTILS_040

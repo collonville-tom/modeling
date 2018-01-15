@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagrams:Diagrams xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:di="http://www.topcased.org/DI/1.0" xmlns:diagrams="http://www.topcased.org/Diagrams/1.0" xmi:id="_zJOboKhyEeKaD4YqlFgJwg" activeDiagram="_zJWXcKhyEeKaD4YqlFgJwg">
+  <model href="fwmetaCoponent.uml#idComponent"/>
+  <diagrams xmi:id="_zJWXcKhyEeKaD4YqlFgJwg" position="0,0" size="100,100" name="fwmetaCoponent" viewport="0,0">
+    <property xmi:id="_zQycMKhyEeKaD4YqlFgJwg" key="pageFormatName" value="A4"/>
+    <property xmi:id="_zQycMahyEeKaD4YqlFgJwg" key="diagramWidth" value="840"/>
+    <property xmi:id="_zQycMqhyEeKaD4YqlFgJwg" key="diagramHeight" value="1188"/>
+    <property xmi:id="_zQycM6hyEeKaD4YqlFgJwg" key="pageMarginName" value="Small Margin"/>
+    <property xmi:id="_zQycNKhyEeKaD4YqlFgJwg" key="diagramTopMargin" value="20"/>
+    <property xmi:id="_zQycNahyEeKaD4YqlFgJwg" key="diagramBottomMargin" value="20"/>
+    <property xmi:id="_zQycNqhyEeKaD4YqlFgJwg" key="diagramLeftMargin" value="20"/>
+    <property xmi:id="_zQycN6hyEeKaD4YqlFgJwg" key="diagramRightMargin" value="20"/>
+    <property xmi:id="_zQycOKhyEeKaD4YqlFgJwg" key="orientation" value="portrait"/>
+    <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_zJYMoKhyEeKaD4YqlFgJwg" presentation="org.topcased.modeler.uml.componentdiagram">
+      <element href="fwmetaCoponent.uml#idComponent"/>
+    </semanticModel>
+    <contained xsi:type="di:GraphNode" xmi:id="_0cbv8KhyEeKaD4YqlFgJwg" position="84,94" size="200,90">
+      <anchorage xmi:id="_4PDtAahyEeKaD4YqlFgJwg" graphEdge="_4PZrQKhyEeKaD4YqlFgJwg"/>
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_0cbv8ahyEeKaD4YqlFgJwg" presentation="default">
+        <element href="fwmetaCoponent.uml#_0eSxIKhyEeKaD4YqlFgJwg"/>
+      </semanticModel>
+    </contained>
+    <contained xsi:type="di:GraphNode" xmi:id="_1v8mQKhyEeKaD4YqlFgJwg" position="435,78" size="200,90">
+      <anchorage xmi:id="_4PDtAKhyEeKaD4YqlFgJwg" graphEdge="_4PZrQKhyEeKaD4YqlFgJwg"/>
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_1v8mQahyEeKaD4YqlFgJwg" presentation="default">
+        <element href="fwmetaCoponent.uml#_1v-bcKhyEeKaD4YqlFgJwg"/>
+      </semanticModel>
+    </contained>
+    <contained xsi:type="di:GraphEdge" xmi:id="_4PZrQKhyEeKaD4YqlFgJwg" anchor="_4PDtAKhyEeKaD4YqlFgJwg _4PDtAahyEeKaD4YqlFgJwg">
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_4PaSUKhyEeKaD4YqlFgJwg" presentation="default">
+        <element href="fwmetaCoponent.uml#_4PaSUqhyEeKaD4YqlFgJwg"/>
+      </semanticModel>
+      <contained xsi:type="di:EdgeObjectOffset" xmi:id="_4PaSUahyEeKaD4YqlFgJwg" id="stereotypeEdgeObject"/>
+    </contained>
+  </diagrams>
+</diagrams:Diagrams>

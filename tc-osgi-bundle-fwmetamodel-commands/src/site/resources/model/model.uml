@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_4UOu4K8rEeKPGuvRezsFqg" name="">
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_4UOu4a8rEeKPGuvRezsFqg" name="boolean"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_4UPV8K8rEeKPGuvRezsFqg" name="byte"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_4UPV8a8rEeKPGuvRezsFqg" name="char"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_4UP9AK8rEeKPGuvRezsFqg" name="double"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_4UP9Aa8rEeKPGuvRezsFqg" name="float"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_4UP9Aq8rEeKPGuvRezsFqg" name="int"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_4UQkEK8rEeKPGuvRezsFqg" name="long"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_4UQkEa8rEeKPGuvRezsFqg" name="short"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_4URLIK8rEeKPGuvRezsFqg" name="org">
+    <packagedElement xmi:type="uml:Package" xmi:id="_4URLIa8rEeKPGuvRezsFqg" name="tc">
+      <packagedElement xmi:type="uml:Package" xmi:id="_4URLIq8rEeKPGuvRezsFqg" name="osgi">
+        <packagedElement xmi:type="uml:Package" xmi:id="_4URLI68rEeKPGuvRezsFqg" name="bundle">
+          <packagedElement xmi:type="uml:Package" xmi:id="_4URyMK8rEeKPGuvRezsFqg" name="fwmetamodel">
+            <packagedElement xmi:type="uml:Package" xmi:id="_4URyMa8rEeKPGuvRezsFqg" name="command">
+              <packagedElement xmi:type="uml:Class" xmi:id="_4UTAUK8rEeKPGuvRezsFqg" name="ExecuteInstructions">
+                <ownedOperation xmi:id="_4VU7EK8rEeKPGuvRezsFqg" name="exec" visibility="public" isStatic="true"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_4UTAUa8rEeKPGuvRezsFqg" name="Repository">
+                <ownedAttribute xmi:id="_4VViIa8rEeKPGuvRezsFqg" name="commands" visibility="private" type="_4VViIK8rEeKPGuvRezsFqg"/>
+                <ownedOperation xmi:id="_4VWJMK8rEeKPGuvRezsFqg" name="getCommandsIterator" visibility="public">
+                  <ownedParameter xmi:id="_4VWJMa8rEeKPGuvRezsFqg" name="return" type="_4UTnYK8rEeKPGuvRezsFqg" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_4VWwQK8rEeKPGuvRezsFqg" name="getInstructions" visibility="public">
+                  <ownedParameter xmi:id="_4VWwQa8rEeKPGuvRezsFqg" name="return" type="_4VViIK8rEeKPGuvRezsFqg" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_4VXXUK8rEeKPGuvRezsFqg" name="setInstructions" visibility="public">
+                  <ownedParameter xmi:id="_4VXXUa8rEeKPGuvRezsFqg" name="commands" type="_4VViIK8rEeKPGuvRezsFqg"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_4UTAUq8rEeKPGuvRezsFqg" name="AbstractCommand">
+                <ownedAttribute xmi:id="_4VXXUq8rEeKPGuvRezsFqg" name="repository" visibility="private" type="_4UTAUa8rEeKPGuvRezsFqg" association="_4XjIoK8rEeKPGuvRezsFqg"/>
+                <ownedOperation xmi:id="_4VX-YK8rEeKPGuvRezsFqg" name="getRepository" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_4VX-Ya8rEeKPGuvRezsFqg" name="return" type="_4UTAUa8rEeKPGuvRezsFqg" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_4VYlcK8rEeKPGuvRezsFqg" name="setRepository" visibility="public" isStatic="true">
+                  <ownedParameter xmi:id="_4VYlca8rEeKPGuvRezsFqg" name="repository" type="_4UTAUa8rEeKPGuvRezsFqg"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_4VbowK8rEeKPGuvRezsFqg" name="exec" visibility="public" isAbstract="true"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_4UTnYK8rEeKPGuvRezsFqg" name="CommandsIterator">
+                <ownedAttribute xmi:id="_4Vc24K8rEeKPGuvRezsFqg" name="iterator" visibility="private" type="_4VcP0K8rEeKPGuvRezsFqg"/>
+                <ownedOperation xmi:id="_4Vc24a8rEeKPGuvRezsFqg" name="getIterator" visibility="public">
+                  <ownedParameter xmi:id="_4Vc24q8rEeKPGuvRezsFqg" name="return" type="_4VcP0K8rEeKPGuvRezsFqg" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_4Vdd8K8rEeKPGuvRezsFqg" name="hasNext" visibility="public">
+                  <ownedParameter xmi:id="_4Vdd8a8rEeKPGuvRezsFqg" name="return" type="_4UOu4a8rEeKPGuvRezsFqg" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_4Vdd8q8rEeKPGuvRezsFqg" name="next" visibility="public">
+                  <ownedParameter xmi:id="_4Vdd868rEeKPGuvRezsFqg" name="return" type="_4UTAUq8rEeKPGuvRezsFqg" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_4VeFAK8rEeKPGuvRezsFqg" name="remove" visibility="public"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Package" xmi:id="_4UTnYa8rEeKPGuvRezsFqg" name="config">
+                <packagedElement xmi:type="uml:Class" xmi:id="_4UU1gK8rEeKPGuvRezsFqg" name="AbstractConfigAssociation">
+                  <generalization xmi:id="_4VesEK8rEeKPGuvRezsFqg" general="_4UTAUq8rEeKPGuvRezsFqg"/>
+                  <ownedAttribute xmi:id="_4Vn2Aa8rEeKPGuvRezsFqg" name="cible" visibility="private" type="_4Vn2AK8rEeKPGuvRezsFqg"/>
+                  <ownedAttribute xmi:id="_4Vn2Aq8rEeKPGuvRezsFqg" name="elements" visibility="private" type="_4VViIK8rEeKPGuvRezsFqg"/>
+                  <ownedOperation xmi:id="_4VodEK8rEeKPGuvRezsFqg" name="add" visibility="public">
+                    <ownedParameter xmi:id="_4VodEa8rEeKPGuvRezsFqg" name="string" type="_4Vn2AK8rEeKPGuvRezsFqg"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_4VpEIK8rEeKPGuvRezsFqg" name="configExec" visibility="protected" isAbstract="true"/>
+                  <ownedOperation xmi:id="_4VprMK8rEeKPGuvRezsFqg" name="exec" visibility="public"/>
+                  <ownedOperation xmi:id="_4VqSQK8rEeKPGuvRezsFqg" name="getCible" visibility="public">
+                    <ownedParameter xmi:id="_4VqSQa8rEeKPGuvRezsFqg" name="return" type="_4Vn2AK8rEeKPGuvRezsFqg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_4Vq5UK8rEeKPGuvRezsFqg" name="getElementsIterator" visibility="public">
+                    <ownedParameter xmi:id="_4Vq5Ua8rEeKPGuvRezsFqg" name="return" type="_4VcP0K8rEeKPGuvRezsFqg" direction="return"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Package" xmi:id="_4UU1ga8rEeKPGuvRezsFqg" name="instance">
+                  <packagedElement xmi:type="uml:Class" xmi:id="_4UWqsK8rEeKPGuvRezsFqg" name="ModelConfig">
+                    <generalization xmi:id="_4VrgYK8rEeKPGuvRezsFqg" general="_4UgbsK8rEeKPGuvRezsFqg"/>
+                    <ownedOperation xmi:id="_4VrgYa8rEeKPGuvRezsFqg" name="configExec" visibility="protected"/>
+                    <ownedOperation xmi:id="_4VsHcK8rEeKPGuvRezsFqg" name="findInstanceCreatingCommand" visibility="protected">
+                      <ownedParameter xmi:id="_4VsHca8rEeKPGuvRezsFqg" name="return" type="_4U3BBK8rEeKPGuvRezsFqg" direction="return"/>
+                    </ownedOperation>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_4UemgK8rEeKPGuvRezsFqg" name="RelationConfig">
+                    <generalization xmi:id="_4VsugK8rEeKPGuvRezsFqg" general="_4UgbsK8rEeKPGuvRezsFqg"/>
+                    <ownedOperation xmi:id="_4VtVkK8rEeKPGuvRezsFqg" name="configExec" visibility="protected"/>
+                    <ownedOperation xmi:id="_4Vt8oK8rEeKPGuvRezsFqg" name="findInstanceCreatingCommand" visibility="protected">
+                      <ownedParameter xmi:id="_4Vt8oa8rEeKPGuvRezsFqg" name="return" type="_4U1L0K8rEeKPGuvRezsFqg" direction="return"/>
+                    </ownedOperation>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_4UgbsK8rEeKPGuvRezsFqg" name="AbstractInstanceConfigAssociation">
+                    <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_4Ugbsa8rEeKPGuvRezsFqg" parameter="_4Ugbsq8rEeKPGuvRezsFqg">
+                      <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_4Ugbsq8rEeKPGuvRezsFqg" parameteredElement="_4Ugbs68rEeKPGuvRezsFqg">
+                        <ownedParameteredElement xmi:type="uml:Class" xmi:id="_4Ugbs68rEeKPGuvRezsFqg" name="T" templateParameter="_4Ugbsq8rEeKPGuvRezsFqg"/>
+                      </ownedParameter>
+                    </ownedTemplateSignature>
+                    <generalization xmi:id="_4Vt8oq8rEeKPGuvRezsFqg" general="_4UU1gK8rEeKPGuvRezsFqg"/>
+                    <ownedOperation xmi:id="_4VujsK8rEeKPGuvRezsFqg" name="findInstanceCreatingCommand" visibility="protected" isAbstract="true">
+                      <ownedParameter xmi:id="_4Vujsa8rEeKPGuvRezsFqg" name="return" type="_4Ugbs68rEeKPGuvRezsFqg" direction="return"/>
+                    </ownedOperation>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_4UoXgK8rEeKPGuvRezsFqg" name="EntityConfig">
+                    <generalization xmi:id="_4VzcMK8rEeKPGuvRezsFqg" general="_4UgbsK8rEeKPGuvRezsFqg"/>
+                    <ownedOperation xmi:id="_4V0DQK8rEeKPGuvRezsFqg" name="configExec" visibility="protected"/>
+                    <ownedOperation xmi:id="_4V0qUK8rEeKPGuvRezsFqg" name="findInstanceCreatingCommand" visibility="protected">
+                      <ownedParameter xmi:id="_4V0qUa8rEeKPGuvRezsFqg" name="return" type="_4U42MK8rEeKPGuvRezsFqg" direction="return"/>
+                    </ownedOperation>
+                  </packagedElement>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Package" xmi:id="_4UoXga8rEeKPGuvRezsFqg" name="type">
+                  <packagedElement xmi:type="uml:Class" xmi:id="_4UploK8rEeKPGuvRezsFqg" name="AbstractMetaConfigAssociation">
+                    <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_4Uploa8rEeKPGuvRezsFqg" parameter="_4Uploq8rEeKPGuvRezsFqg">
+                      <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_4Uploq8rEeKPGuvRezsFqg" parameteredElement="_4Uplo68rEeKPGuvRezsFqg">
+                        <ownedParameteredElement xmi:type="uml:Class" xmi:id="_4Uplo68rEeKPGuvRezsFqg" name="T" templateParameter="_4Uploq8rEeKPGuvRezsFqg"/>
+                      </ownedParameter>
+                    </ownedTemplateSignature>
+                    <generalization xmi:id="_4V0qUq8rEeKPGuvRezsFqg" general="_4UU1gK8rEeKPGuvRezsFqg"/>
+                    <ownedOperation xmi:id="_4V1RYK8rEeKPGuvRezsFqg" name="findMetaCreatingCommand" visibility="protected" isAbstract="true">
+                      <ownedParameter xmi:id="_4V1RYa8rEeKPGuvRezsFqg" name="return" type="_4Uplo68rEeKPGuvRezsFqg" direction="return"/>
+                    </ownedOperation>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_4Ura0K8rEeKPGuvRezsFqg" name="MetaRelationConfig">
+                    <generalization xmi:id="_4V14cK8rEeKPGuvRezsFqg" general="_4UploK8rEeKPGuvRezsFqg"/>
+                    <ownedOperation xmi:id="_4V2fgK8rEeKPGuvRezsFqg" name="configExec" visibility="protected"/>
+                    <ownedOperation xmi:id="_4V2fga8rEeKPGuvRezsFqg" name="findMetaCreatingCommand" visibility="protected">
+                      <ownedParameter xmi:id="_4V2fgq8rEeKPGuvRezsFqg" name="return" type="_4VCAIK8rEeKPGuvRezsFqg" direction="return"/>
+                    </ownedOperation>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_4Uso8K8rEeKPGuvRezsFqg" name="MetaModelConfig">
+                    <generalization xmi:id="_4V3GkK8rEeKPGuvRezsFqg" general="_4UploK8rEeKPGuvRezsFqg"/>
+                    <ownedOperation xmi:id="_4V3toK8rEeKPGuvRezsFqg" name="configExec" visibility="protected"/>
+                    <ownedOperation xmi:id="_4V4UsK8rEeKPGuvRezsFqg" name="findMetaCreatingCommand" visibility="protected">
+                      <ownedParameter xmi:id="_4V4Usa8rEeKPGuvRezsFqg" name="return" type="_4VCnMK8rEeKPGuvRezsFqg" direction="return"/>
+                    </ownedOperation>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_4Ut3EK8rEeKPGuvRezsFqg" name="MetaEntityConfig">
+                    <generalization xmi:id="_4V90QK8rEeKPGuvRezsFqg" general="_4UploK8rEeKPGuvRezsFqg"/>
+                    <ownedOperation xmi:id="_4V-bUK8rEeKPGuvRezsFqg" name="configExec" visibility="protected"/>
+                    <ownedOperation xmi:id="_4V_CYK8rEeKPGuvRezsFqg" name="findMetaCreatingCommand" visibility="protected">
+                      <ownedParameter xmi:id="_4V_CYa8rEeKPGuvRezsFqg" name="return" type="_4U6rYK8rEeKPGuvRezsFqg" direction="return"/>
+                    </ownedOperation>
+                  </packagedElement>
+                </packagedElement>
+                <packagedElement xmi:type="uml:DataType" xmi:id="_4Vn2AK8rEeKPGuvRezsFqg" name="String"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Package" xmi:id="_4UueIK8rEeKPGuvRezsFqg" name="core">
+                <packagedElement xmi:type="uml:Class" xmi:id="_4UueIa8rEeKPGuvRezsFqg" name="AbstractCreatingCommand">
+                  <generalization xmi:id="_4V_CYq8rEeKPGuvRezsFqg" general="_4UTAUq8rEeKPGuvRezsFqg"/>
+                  <ownedAttribute xmi:id="_4V_pcK8rEeKPGuvRezsFqg" name="name" visibility="private" type="_4Vn2AK8rEeKPGuvRezsFqg"/>
+                  <ownedAttribute xmi:id="_4WFJAa8rEeKPGuvRezsFqg" name="type" visibility="private" type="_4WFJAK8rEeKPGuvRezsFqg"/>
+                  <ownedOperation xmi:id="_4WFwEK8rEeKPGuvRezsFqg" name="getName" visibility="public">
+                    <ownedParameter xmi:id="_4WFwEa8rEeKPGuvRezsFqg" name="return" type="_4Vn2AK8rEeKPGuvRezsFqg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_4WFwEq8rEeKPGuvRezsFqg" name="getType" visibility="public">
+                    <ownedParameter xmi:id="_4WFwE68rEeKPGuvRezsFqg" name="return" type="_4WFJAK8rEeKPGuvRezsFqg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_4WGXIK8rEeKPGuvRezsFqg" name="setName" visibility="public">
+                    <ownedParameter xmi:id="_4WGXIa8rEeKPGuvRezsFqg" name="name" type="_4Vn2AK8rEeKPGuvRezsFqg"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_4WHlQK8rEeKPGuvRezsFqg" name="setType" visibility="public">
+                    <ownedParameter xmi:id="_4WHlQa8rEeKPGuvRezsFqg" name="type" type="_4WFJAK8rEeKPGuvRezsFqg"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Package" xmi:id="_4UueIq8rEeKPGuvRezsFqg" name="instance">
+                  <packagedElement xmi:type="uml:Class" xmi:id="_4U1L0K8rEeKPGuvRezsFqg" name="CreateRelation">
+                    <generalization xmi:id="_4WIMUK8rEeKPGuvRezsFqg" general="_4U3BAK8rEeKPGuvRezsFqg"/>
+                    <ownedAttribute xmi:id="_4WIMUa8rEeKPGuvRezsFqg" name="type" visibility="private" type="_4Vn2AK8rEeKPGuvRezsFqg"/>
+                    <ownedOperation xmi:id="_4WIzYK8rEeKPGuvRezsFqg" name="exec" visibility="public"/>
+                    <ownedOperation xmi:id="_4WJacK8rEeKPGuvRezsFqg" name="findMetaCreatingCommand" visibility="protected">
+                      <ownedParameter xmi:id="_4WJaca8rEeKPGuvRezsFqg" name="return" type="_4VCAIK8rEeKPGuvRezsFqg" direction="return"/>
+                    </ownedOperation>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_4U2Z8K8rEeKPGuvRezsFqg" name="CreateAttribute">
+                    <generalization xmi:id="_4WKBgK8rEeKPGuvRezsFqg" general="_4U3BAK8rEeKPGuvRezsFqg"/>
+                    <ownedAttribute xmi:id="_4WKBga8rEeKPGuvRezsFqg" name="type" visibility="private" type="_4Vn2AK8rEeKPGuvRezsFqg"/>
+                    <ownedOperation xmi:id="_4WKokK8rEeKPGuvRezsFqg" name="exec" visibility="public"/>
+                    <ownedOperation xmi:id="_4WLPoK8rEeKPGuvRezsFqg" name="findMetaCreatingCommand" visibility="protected">
+                      <ownedParameter xmi:id="_4WLPoa8rEeKPGuvRezsFqg" name="return" type="_4U6EUK8rEeKPGuvRezsFqg" direction="return"/>
+                    </ownedOperation>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_4U3BAK8rEeKPGuvRezsFqg" name="AbstractInstanceCreatingCommand">
+                    <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_4U3BAa8rEeKPGuvRezsFqg" parameter="_4U3BAq8rEeKPGuvRezsFqg">
+                      <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_4U3BAq8rEeKPGuvRezsFqg" parameteredElement="_4U3BA68rEeKPGuvRezsFqg">
+                        <ownedParameteredElement xmi:type="uml:Class" xmi:id="_4U3BA68rEeKPGuvRezsFqg" name="T" templateParameter="_4U3BAq8rEeKPGuvRezsFqg"/>
+                      </ownedParameter>
+                    </ownedTemplateSignature>
+                    <generalization xmi:id="_4WLPoq8rEeKPGuvRezsFqg" general="_4UueIa8rEeKPGuvRezsFqg"/>
+                    <ownedOperation xmi:id="_4WL2sK8rEeKPGuvRezsFqg" name="findMetaCreatingCommand" visibility="protected" isAbstract="true">
+                      <ownedParameter xmi:id="_4WL2sa8rEeKPGuvRezsFqg" name="return" type="_4U3BA68rEeKPGuvRezsFqg" direction="return"/>
+                    </ownedOperation>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_4U3BBK8rEeKPGuvRezsFqg" name="CreateModel">
+                    <generalization xmi:id="_4WR9UK8rEeKPGuvRezsFqg" general="_4U3BAK8rEeKPGuvRezsFqg"/>
+                    <ownedAttribute xmi:id="_4WSkYK8rEeKPGuvRezsFqg" name="type" visibility="private" type="_4Vn2AK8rEeKPGuvRezsFqg"/>
+                    <ownedOperation xmi:id="_4WTLcK8rEeKPGuvRezsFqg" name="exec" visibility="public"/>
+                    <ownedOperation xmi:id="_4WTLca8rEeKPGuvRezsFqg" name="findMetaCreatingCommand" visibility="protected">
+                      <ownedParameter xmi:id="_4WTLcq8rEeKPGuvRezsFqg" name="return" type="_4VCnMK8rEeKPGuvRezsFqg" direction="return"/>
+                    </ownedOperation>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_4U42MK8rEeKPGuvRezsFqg" name="CreateEntity">
+                    <generalization xmi:id="_4WTygK8rEeKPGuvRezsFqg" general="_4U3BAK8rEeKPGuvRezsFqg"/>
+                    <ownedAttribute xmi:id="_4WUZkK8rEeKPGuvRezsFqg" name="type" visibility="private" type="_4Vn2AK8rEeKPGuvRezsFqg"/>
+                    <ownedOperation xmi:id="_4WVAoK8rEeKPGuvRezsFqg" name="exec" visibility="public"/>
+                    <ownedOperation xmi:id="_4WVAoa8rEeKPGuvRezsFqg" name="findMetaCreatingCommand" visibility="protected">
+                      <ownedParameter xmi:id="_4WVAoq8rEeKPGuvRezsFqg" name="return" type="_4U6rYK8rEeKPGuvRezsFqg" direction="return"/>
+                    </ownedOperation>
+                  </packagedElement>
+                </packagedElement>
+                <packagedElement xmi:type="uml:DataType" xmi:id="_4WFJAK8rEeKPGuvRezsFqg" name="AbstractType"/>
+                <packagedElement xmi:type="uml:Package" xmi:id="_4U42Ma8rEeKPGuvRezsFqg" name="type">
+                  <packagedElement xmi:type="uml:Class" xmi:id="_4U6EUK8rEeKPGuvRezsFqg" name="CreateMetaAttribute">
+                    <generalization xmi:id="_4WVnsK8rEeKPGuvRezsFqg" general="_4VCnMa8rEeKPGuvRezsFqg"/>
+                    <ownedAttribute xmi:id="_4WZ5IK8rEeKPGuvRezsFqg" name="value" visibility="private" type="_4Vn2AK8rEeKPGuvRezsFqg"/>
+                    <ownedOperation xmi:id="_4WagMK8rEeKPGuvRezsFqg" name="exec" visibility="public"/>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_4U6rYK8rEeKPGuvRezsFqg" name="CreateMetaEntity">
+                    <generalization xmi:id="_4WbHQK8rEeKPGuvRezsFqg" general="_4VCnMa8rEeKPGuvRezsFqg"/>
+                    <ownedOperation xmi:id="_4WbHQa8rEeKPGuvRezsFqg" name="exec" visibility="public"/>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_4VCAIK8rEeKPGuvRezsFqg" name="CreateMetaRelation">
+                    <generalization xmi:id="_4WbuUK8rEeKPGuvRezsFqg" general="_4VCnMa8rEeKPGuvRezsFqg"/>
+                    <ownedOperation xmi:id="_4WbuUa8rEeKPGuvRezsFqg" name="exec" visibility="public"/>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_4VCnMK8rEeKPGuvRezsFqg" name="CreateMetaModel">
+                    <generalization xmi:id="_4WcVYK8rEeKPGuvRezsFqg" general="_4VCnMa8rEeKPGuvRezsFqg"/>
+                    <ownedOperation xmi:id="_4WcVYa8rEeKPGuvRezsFqg" name="exec" visibility="public"/>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_4VCnMa8rEeKPGuvRezsFqg" name="AbstractTypeCreatingCommand">
+                    <generalization xmi:id="_4Wc8cK8rEeKPGuvRezsFqg" general="_4UueIa8rEeKPGuvRezsFqg"/>
+                  </packagedElement>
+                </packagedElement>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Package" xmi:id="_4VCnMq8rEeKPGuvRezsFqg" name="io">
+                <packagedElement xmi:type="uml:Class" xmi:id="_4VDOQK8rEeKPGuvRezsFqg" name="LoadModel">
+                  <generalization xmi:id="_4WicAK8rEeKPGuvRezsFqg" general="_4UTAUq8rEeKPGuvRezsFqg"/>
+                  <ownedOperation xmi:id="_4WicAa8rEeKPGuvRezsFqg" name="exec" visibility="public"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_4VDOQa8rEeKPGuvRezsFqg" name="PrintModelOnFile">
+                  <generalization xmi:id="_4WjDEK8rEeKPGuvRezsFqg" general="_4VDOQ68rEeKPGuvRezsFqg"/>
+                  <ownedAttribute xmi:id="_4WjDEa8rEeKPGuvRezsFqg" name="path" visibility="private" type="_4Vn2AK8rEeKPGuvRezsFqg"/>
+                  <ownedOperation xmi:id="_4WjqIK8rEeKPGuvRezsFqg" name="exec" visibility="public"/>
+                  <ownedOperation xmi:id="_4WkRMK8rEeKPGuvRezsFqg" name="findCommand" visibility="protected">
+                    <ownedParameter xmi:id="_4WkRMa8rEeKPGuvRezsFqg" name="return" type="_4UTAUq8rEeKPGuvRezsFqg" direction="return"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_4VDOQq8rEeKPGuvRezsFqg" name="PrintModelOnConsole">
+                  <generalization xmi:id="_4WkRMq8rEeKPGuvRezsFqg" general="_4VDOQ68rEeKPGuvRezsFqg"/>
+                  <ownedOperation xmi:id="_4Wk4QK8rEeKPGuvRezsFqg" name="exec" visibility="public"/>
+                  <ownedOperation xmi:id="_4Wk4Qa8rEeKPGuvRezsFqg" name="findCommand" visibility="protected">
+                    <ownedParameter xmi:id="_4Wk4Qq8rEeKPGuvRezsFqg" name="return" type="_4UTAUq8rEeKPGuvRezsFqg" direction="return"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_4VDOQ68rEeKPGuvRezsFqg" name="IoCommand">
+                  <generalization xmi:id="_4WlfUK8rEeKPGuvRezsFqg" general="_4UTAUq8rEeKPGuvRezsFqg"/>
+                  <ownedAttribute xmi:id="_4WlfUa8rEeKPGuvRezsFqg" name="cible" visibility="private" type="_4Vn2AK8rEeKPGuvRezsFqg"/>
+                  <ownedOperation xmi:id="_4WmGYK8rEeKPGuvRezsFqg" name="findCommand" visibility="protected" isAbstract="true">
+                    <ownedParameter xmi:id="_4WmGYa8rEeKPGuvRezsFqg" name="return" type="_4UTAUq8rEeKPGuvRezsFqg" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_4WmtcK8rEeKPGuvRezsFqg" name="getCible" visibility="public">
+                    <ownedParameter xmi:id="_4Wmtca8rEeKPGuvRezsFqg" name="return" type="_4Vn2AK8rEeKPGuvRezsFqg" direction="return"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_4VD1UK8rEeKPGuvRezsFqg" name="PrintMetaModelOnFile">
+                  <generalization xmi:id="_4Wmtcq8rEeKPGuvRezsFqg" general="_4VDOQ68rEeKPGuvRezsFqg"/>
+                  <ownedAttribute xmi:id="_4WnUgK8rEeKPGuvRezsFqg" name="path" visibility="private" type="_4Vn2AK8rEeKPGuvRezsFqg"/>
+                  <ownedOperation xmi:id="_4WnUga8rEeKPGuvRezsFqg" name="exec" visibility="public"/>
+                  <ownedOperation xmi:id="_4Wrl8K8rEeKPGuvRezsFqg" name="findCommand" visibility="protected">
+                    <ownedParameter xmi:id="_4Wrl8a8rEeKPGuvRezsFqg" name="return" type="_4UTAUq8rEeKPGuvRezsFqg" direction="return"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_4VD1Ua8rEeKPGuvRezsFqg" name="PrintMetaModelOnConsole">
+                  <generalization xmi:id="_4WsNAK8rEeKPGuvRezsFqg" general="_4VDOQ68rEeKPGuvRezsFqg"/>
+                  <ownedOperation xmi:id="_4WsNAa8rEeKPGuvRezsFqg" name="exec" visibility="public"/>
+                  <ownedOperation xmi:id="_4Ws0EK8rEeKPGuvRezsFqg" name="findCommand" visibility="protected">
+                    <ownedParameter xmi:id="_4Ws0Ea8rEeKPGuvRezsFqg" name="return" type="_4UTAUq8rEeKPGuvRezsFqg" direction="return"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_4VD1Uq8rEeKPGuvRezsFqg" name="LoadMetaModel">
+                  <generalization xmi:id="_4WtbIK8rEeKPGuvRezsFqg" general="_4UTAUq8rEeKPGuvRezsFqg"/>
+                  <ownedAttribute xmi:id="_4WtbIa8rEeKPGuvRezsFqg" name="path" visibility="private" type="_4Vn2AK8rEeKPGuvRezsFqg"/>
+                  <ownedOperation xmi:id="_4WuCMK8rEeKPGuvRezsFqg" name="exec" visibility="public"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Package" xmi:id="_4VEcYK8rEeKPGuvRezsFqg" name="matching">
+                  <packagedElement xmi:type="uml:Class" xmi:id="_4VEcYa8rEeKPGuvRezsFqg" name="Matching">
+                    <ownedOperation xmi:id="_4WvQUK8rEeKPGuvRezsFqg" name="found" visibility="protected" isAbstract="true">
+                      <ownedParameter xmi:id="_4WvQUa8rEeKPGuvRezsFqg" name="matcher" type="_4WupQK8rEeKPGuvRezsFqg"/>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_4Wv3YK8rEeKPGuvRezsFqg" name="mustBeDiscard" visibility="protected">
+                      <ownedParameter xmi:id="_4Wv3Ya8rEeKPGuvRezsFqg" name="group" type="_4Vn2AK8rEeKPGuvRezsFqg"/>
+                      <ownedParameter xmi:id="_4Wv3Yq8rEeKPGuvRezsFqg" name="matcher" type="_4WupQK8rEeKPGuvRezsFqg"/>
+                      <ownedParameter xmi:id="_4Wv3Y68rEeKPGuvRezsFqg" name="return" type="_4UOu4a8rEeKPGuvRezsFqg" direction="return"/>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_4WzhwK8rEeKPGuvRezsFqg" name="removePrefix" visibility="protected">
+                      <ownedParameter xmi:id="_4Wzhwa8rEeKPGuvRezsFqg" name="group" type="_4Vn2AK8rEeKPGuvRezsFqg"/>
+                      <ownedParameter xmi:id="_4Wzhwq8rEeKPGuvRezsFqg" name="matcher" type="_4WupQK8rEeKPGuvRezsFqg"/>
+                      <ownedParameter xmi:id="_4Wzhw68rEeKPGuvRezsFqg" name="return" type="_4Vn2AK8rEeKPGuvRezsFqg" direction="return"/>
+                    </ownedOperation>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Package" xmi:id="_4VEcYq8rEeKPGuvRezsFqg" name="configuration">
+                    <packagedElement xmi:type="uml:Class" xmi:id="_4VEcY68rEeKPGuvRezsFqg" name="ConfigMatching">
+                      <generalization xmi:id="_4W0I0K8rEeKPGuvRezsFqg" general="_4VEcYa8rEeKPGuvRezsFqg"/>
+                      <ownedAttribute xmi:id="_4W0v4a8rEeKPGuvRezsFqg" name="closing" visibility="package" type="_4W0v4K8rEeKPGuvRezsFqg"/>
+                      <ownedAttribute xmi:id="_4W0v4q8rEeKPGuvRezsFqg" name="namePat" visibility="package" type="_4W0v4K8rEeKPGuvRezsFqg"/>
+                      <ownedAttribute xmi:id="_4W0v468rEeKPGuvRezsFqg" name="opening" visibility="package" type="_4W0v4K8rEeKPGuvRezsFqg"/>
+                      <ownedAttribute xmi:id="_4W1W8K8rEeKPGuvRezsFqg" name="suppclosing" visibility="package" type="_4W0v4K8rEeKPGuvRezsFqg"/>
+                      <ownedAttribute xmi:id="_4W1W8a8rEeKPGuvRezsFqg" name="suppnamePat" visibility="package" type="_4W0v4K8rEeKPGuvRezsFqg"/>
+                      <ownedAttribute xmi:id="_4W1-AK8rEeKPGuvRezsFqg" name="suppopening" visibility="package" type="_4W0v4K8rEeKPGuvRezsFqg"/>
+                      <ownedAttribute xmi:id="_4W1-Aa8rEeKPGuvRezsFqg" name="name" visibility="private" type="_4Vn2AK8rEeKPGuvRezsFqg"/>
+                      <ownedAttribute xmi:id="_4W2lEK8rEeKPGuvRezsFqg" name="tag" visibility="private" type="_4Vn2AK8rEeKPGuvRezsFqg"/>
+                      <ownedOperation xmi:id="_4W3MIK8rEeKPGuvRezsFqg" name="found" visibility="protected">
+                        <ownedParameter xmi:id="_4W3MIa8rEeKPGuvRezsFqg" name="matcher" type="_4WupQK8rEeKPGuvRezsFqg"/>
+                      </ownedOperation>
+                      <ownedOperation xmi:id="_4W3zMK8rEeKPGuvRezsFqg" name="getName" visibility="public">
+                        <ownedParameter xmi:id="_4W3zMa8rEeKPGuvRezsFqg" name="return" type="_4Vn2AK8rEeKPGuvRezsFqg" direction="return"/>
+                      </ownedOperation>
+                      <ownedOperation xmi:id="_4W_vAK8rEeKPGuvRezsFqg" name="getTag" visibility="public">
+                        <ownedParameter xmi:id="_4W_vAa8rEeKPGuvRezsFqg" name="return" type="_4Vn2AK8rEeKPGuvRezsFqg" direction="return"/>
+                      </ownedOperation>
+                      <ownedOperation xmi:id="_4XAWEK8rEeKPGuvRezsFqg" name="setName" visibility="public">
+                        <ownedParameter xmi:id="_4XAWEa8rEeKPGuvRezsFqg" name="name" type="_4Vn2AK8rEeKPGuvRezsFqg"/>
+                      </ownedOperation>
+                      <ownedOperation xmi:id="_4XBkMK8rEeKPGuvRezsFqg" name="setTag" visibility="public">
+                        <ownedParameter xmi:id="_4XBkMa8rEeKPGuvRezsFqg" name="tag" type="_4Vn2AK8rEeKPGuvRezsFqg"/>
+                      </ownedOperation>
+                    </packagedElement>
+                    <packagedElement xmi:type="uml:Class" xmi:id="_4VLKEK8rEeKPGuvRezsFqg" name="NodesConstructeur">
+                      <ownedAttribute xmi:id="_4XCLQK8rEeKPGuvRezsFqg" name="messages" visibility="private" type="_4XBkMq8rEeKPGuvRezsFqg"/>
+                    </packagedElement>
+                    <packagedElement xmi:type="uml:DataType" xmi:id="_4W0v4K8rEeKPGuvRezsFqg" name="Pattern"/>
+                    <packagedElement xmi:type="uml:DataType" xmi:id="_4XBkMq8rEeKPGuvRezsFqg" name="ArrayList"/>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Package" xmi:id="_4VLKEa8rEeKPGuvRezsFqg" name="type">
+                    <packagedElement xmi:type="uml:Class" xmi:id="_4VLKEq8rEeKPGuvRezsFqg" name="MetaAttributeMatcher">
+                      <generalization xmi:id="_4XCLQa8rEeKPGuvRezsFqg" general="_4VEcYa8rEeKPGuvRezsFqg"/>
+                      <ownedAttribute xmi:id="_4XCyUK8rEeKPGuvRezsFqg" name="firstPrefix" visibility="package" type="_4W0v4K8rEeKPGuvRezsFqg"/>
+                      <ownedAttribute xmi:id="_4XDZYK8rEeKPGuvRezsFqg" name="model" visibility="package" type="_4W0v4K8rEeKPGuvRezsFqg"/>
+                      <ownedAttribute xmi:id="_4XEAcK8rEeKPGuvRezsFqg" name="secondPrefix" visibility="package" type="_4W0v4K8rEeKPGuvRezsFqg"/>
+                      <ownedAttribute xmi:id="_4XEngK8rEeKPGuvRezsFqg" name="valuePattern" visibility="package" type="_4W0v4K8rEeKPGuvRezsFqg"/>
+                      <ownedOperation xmi:id="_4XFOkK8rEeKPGuvRezsFqg" name="found" visibility="protected">
+                        <ownedParameter xmi:id="_4XFOka8rEeKPGuvRezsFqg" name="matcher" type="_4WupQK8rEeKPGuvRezsFqg"/>
+                      </ownedOperation>
+                    </packagedElement>
+                    <packagedElement xmi:type="uml:Class" xmi:id="_4VLxIK8rEeKPGuvRezsFqg" name="MetaEntityMatcher">
+                      <generalization xmi:id="_4XF1oK8rEeKPGuvRezsFqg" general="_4VEcYa8rEeKPGuvRezsFqg"/>
+                      <ownedAttribute xmi:id="_4XF1oa8rEeKPGuvRezsFqg" name="extPattern" visibility="package" type="_4W0v4K8rEeKPGuvRezsFqg"/>
+                      <ownedAttribute xmi:id="_4XGcsK8rEeKPGuvRezsFqg" name="model" visibility="package" type="_4W0v4K8rEeKPGuvRezsFqg"/>
+                      <ownedOperation xmi:id="_4XO_kK8rEeKPGuvRezsFqg" name="found" visibility="protected">
+                        <ownedParameter xmi:id="_4XO_ka8rEeKPGuvRezsFqg" name="matcher" type="_4WupQK8rEeKPGuvRezsFqg"/>
+                      </ownedOperation>
+                    </packagedElement>
+                    <packagedElement xmi:type="uml:Class" xmi:id="_4VLxIa8rEeKPGuvRezsFqg" name="MetaModelMatcher">
+                      <generalization xmi:id="_4XPmoK8rEeKPGuvRezsFqg" general="_4VEcYa8rEeKPGuvRezsFqg"/>
+                      <ownedAttribute xmi:id="_4XPmoa8rEeKPGuvRezsFqg" name="extPattern" visibility="package" type="_4W0v4K8rEeKPGuvRezsFqg"/>
+                      <ownedAttribute xmi:id="_4XQNsK8rEeKPGuvRezsFqg" name="model" visibility="package" type="_4W0v4K8rEeKPGuvRezsFqg"/>
+                      <ownedOperation xmi:id="_4XRb0K8rEeKPGuvRezsFqg" name="found" visibility="protected">
+                        <ownedParameter xmi:id="_4XRb0a8rEeKPGuvRezsFqg" name="matcher" type="_4WupQK8rEeKPGuvRezsFqg"/>
+                      </ownedOperation>
+                    </packagedElement>
+                    <packagedElement xmi:type="uml:Class" xmi:id="_4VLxIq8rEeKPGuvRezsFqg" name="MetaRelationMatcher">
+                      <generalization xmi:id="_4XRb0q8rEeKPGuvRezsFqg" general="_4VEcYa8rEeKPGuvRezsFqg"/>
+                      <ownedAttribute xmi:id="_4XSC4K8rEeKPGuvRezsFqg" name="extPattern" visibility="package" type="_4W0v4K8rEeKPGuvRezsFqg"/>
+                      <ownedAttribute xmi:id="_4XSp8K8rEeKPGuvRezsFqg" name="model" visibility="package" type="_4W0v4K8rEeKPGuvRezsFqg"/>
+                      <ownedOperation xmi:id="_4XT4EK8rEeKPGuvRezsFqg" name="found" visibility="protected">
+                        <ownedParameter xmi:id="_4XT4Ea8rEeKPGuvRezsFqg" name="matcher" type="_4WupQK8rEeKPGuvRezsFqg"/>
+                      </ownedOperation>
+                    </packagedElement>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_4VUUAK8rEeKPGuvRezsFqg" name="MatchingTest">
+                    <ownedOperation xmi:id="_4XVGMK8rEeKPGuvRezsFqg" name="test" visibility="public"/>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:DataType" xmi:id="_4WupQK8rEeKPGuvRezsFqg" name="Matcher"/>
+                </packagedElement>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_4VTF4K8rEeKPGuvRezsFqg" name="CommandTest">
+                <ownedOperation xmi:id="_4XUfIK8rEeKPGuvRezsFqg" name="test" visibility="public"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:DataType" xmi:id="_4VViIK8rEeKPGuvRezsFqg" name="List"/>
+              <packagedElement xmi:type="uml:DataType" xmi:id="_4VcP0K8rEeKPGuvRezsFqg" name="Iterator"/>
+              <packagedElement xmi:type="uml:Association" xmi:id="_4XjIoK8rEeKPGuvRezsFqg" memberEnd="_4VXXUq8rEeKPGuvRezsFqg _4XjIoa8rEeKPGuvRezsFqg">
+                <ownedEnd xmi:id="_4XjIoa8rEeKPGuvRezsFqg" name="target" type="_4UTAUq8rEeKPGuvRezsFqg" association="_4XjIoK8rEeKPGuvRezsFqg"/>
+              </packagedElement>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

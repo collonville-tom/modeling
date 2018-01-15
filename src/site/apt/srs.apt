@@ -1,0 +1,12 @@
+Framework Metamodelisation Software Requirements Specification
+
+* Introduction
+
+** @req SRS_FWMETAMODEL_010
+
+  Le composant permet la construction de meta-modele et de modele 
+  
+        * @version 0.0.1
+        
+        * @track SRS_TC_060
+
