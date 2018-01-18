@@ -2,25 +2,25 @@ Backlog
 
 * attentes
 
-		* Mettre a jour documentation SRS
+		* [DOC] Mettre a jour documentation SRS
 		
-		* Mettre a jour documentation SDD
+		* [DOC] Mettre a jour documentation SDD
 		
-		* Mettre a jour documentation STP
+		* [DOC] Mettre a jour documentation STP
 		
-		* Mettre a jour documentation index
+		* [DOC] Mettre a jour documentation index
 		
-		* 0.1.0 faire doc
+        * [DEV] creer service exposant capacité du commande
         
-        * 0.1.0 creer service exposant capacité du commande
+        * [DEV] creer tracker pour consommer utils
         
-        * 0.1.0 creer tracker pour consommer utils
+        * [DEV] creer tracker pour consommer fw-core
         
-        * 0.1.0 creer tracker pour consommer fw-core
+        * [DEV] construire activator
         
-        * 0.1.0 construire activator
+        * [DEV] mettre a jour les pom en fonction de l'activator
         
-        * 0.1.0 mettre a jour les pom en fonction de l'activator
+		* [DEV] definir les dependances debian
 		
 * acceptes
 
