@@ -16,7 +16,7 @@
   	<module>tc-osgi-bundle-fwmetamodel-core-interfaces</module>
 	<module>tc-osgi-bundle-fwmetamodel-commands-interfaces</module>
 	<module>tc-osgi-bundle-fwmetamodel-core</module>
-	<module>tc-osgi-bundle-fwmetamodel-commands</module>
+	<!--  <module>tc-osgi-bundle-fwmetamodel-commands</module>-->
    </modules>
   
   
