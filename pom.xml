@@ -1,26 +1,27 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <name>${project.artifactId}-${project.version}</name>
-  <artifactId>tc-fwmetamodel-module</artifactId>
-  <groupId>org.tc.module</groupId>
-  <packaging>pom</packaging>
-  <version>0.1.0-SNAPSHOT</version>
-  
-  <parent>
-    <groupId>org.tc.parent</groupId>
-    <artifactId>tc-parent</artifactId>
-    <version>0.7.0</version>
-  </parent>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<name>${project.artifactId}-${project.version}</name>
+	<artifactId>tc-fwmetamodel-module</artifactId>
+	<groupId>org.tc.module</groupId>
+	<packaging>pom</packaging>
+	<version>0.11.0-SNAPSHOT</version>
 
-  <modules>
-  	<module>tc-osgi-bundle-fwmetamodel-core-interfaces</module>
-	<module>tc-osgi-bundle-fwmetamodel-commands-interfaces</module>
-	<module>tc-osgi-bundle-fwmetamodel-core</module>
-	<!--  <module>tc-osgi-bundle-fwmetamodel-commands</module>-->
-   </modules>
-  
-  
+	<parent>
+		<groupId>org.tc.parent</groupId>
+		<artifactId>tc-parent</artifactId>
+		<version>0.11.0-SNAPSHOT</version>
+	</parent>
+
+	<modules>
+		<module>tc-osgi-bundle-fwmetamodel-core-interfaces</module>
+		<module>tc-osgi-bundle-fwmetamodel-commands-interfaces</module>
+		<module>tc-osgi-bundle-fwmetamodel-core</module>
+<!--		TODO: pour reintegrer ce composant il faut revoir la genericité des relation AbstractType et interface pour permettre une generalisation propre-->
+<!--		<module>tc-osgi-bundle-fwmetamodel-commands</module>-->
+	</modules>
 
 
-   <description>Framework de metamodelisation</description>
+	<description>Framework de metamodelisation</description>
 </project>

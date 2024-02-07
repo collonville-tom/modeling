@@ -1,18 +1,17 @@
 package org.tc.osgi.bundle.fwmetamodel.core.module.activator;
 
 import org.osgi.framework.BundleContext;
-
 import org.tc.osgi.bundle.fwmetamodel.core.interfaces.module.service.IFwMetaModelCoreService;
 import org.tc.osgi.bundle.fwmetamodel.core.module.service.LoggerServiceProxy;
 import org.tc.osgi.bundle.fwmetamodel.core.module.service.impl.FwMetaModelCoreImpl;
-import org.tc.osgi.bundle.utils.interf.module.exception.TcOsgiException;
-
+import org.tc.osgi.bundle.utils.interf.exception.TcOsgiException;
 import org.tc.osgi.bundle.utils.interf.module.service.ILoggerUtilsService;
 import org.tc.osgi.bundle.utils.interf.module.utils.AbstractTcOsgiActivator;
 import org.tc.osgi.bundle.utils.interf.module.utils.TcOsgiProxy;
 
 /**
  * Activator.java.
+ * 
  * @author Collonville Thomas
  * @version 0.0.1
  */
