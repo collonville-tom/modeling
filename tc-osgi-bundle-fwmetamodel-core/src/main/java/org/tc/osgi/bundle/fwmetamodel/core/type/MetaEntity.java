@@ -6,8 +6,6 @@ import java.util.List;
 
 import org.tc.osgi.bundle.fwmetamodel.core.instance.Entity;
 import org.tc.osgi.bundle.fwmetamodel.core.interfaces.iterator.MetaIterator;
-import org.tc.osgi.bundle.fwmetamodel.core.interfaces.semantics.IMetaAttributed;
-import org.tc.osgi.bundle.fwmetamodel.core.interfaces.semantics.IMetaRelated;
 import org.tc.osgi.bundle.fwmetamodel.core.interfaces.type.IMetaEntity;
 import org.tc.osgi.bundle.fwmetamodel.core.module.service.LoggerServiceProxy;
 

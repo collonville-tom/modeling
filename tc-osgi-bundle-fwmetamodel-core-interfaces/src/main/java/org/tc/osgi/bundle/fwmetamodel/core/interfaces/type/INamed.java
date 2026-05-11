@@ -1,7 +1,6 @@
 package org.tc.osgi.bundle.fwmetamodel.core.interfaces.type;
 
+public interface INamed {
 
-
-public interface IMetaEntity<T extends IType> extends IType {
-
+	public String getName();
 }

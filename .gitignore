@@ -3,4 +3,5 @@
 /.project
 /pom.xml~
 /target
-/bin
+*/bin
+/.idea

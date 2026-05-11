@@ -16,10 +16,9 @@
 
 	<modules>
 		<module>tc-osgi-bundle-fwmetamodel-core-interfaces</module>
-		<module>tc-osgi-bundle-fwmetamodel-commands-interfaces</module>
 		<module>tc-osgi-bundle-fwmetamodel-core</module>
 <!--		TODO: pour reintegrer ce composant il faut revoir la genericité des relation AbstractType et interface pour permettre une generalisation propre-->
-<!--		<module>tc-osgi-bundle-fwmetamodel-commands</module>-->
+		<module>tc-osgi-bundle-fwmetamodel-commands</module>
 	</modules>
 
 
