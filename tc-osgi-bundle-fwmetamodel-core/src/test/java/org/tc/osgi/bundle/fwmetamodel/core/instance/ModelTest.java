@@ -4,11 +4,11 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.tc.osgi.bundle.fwmetamodel.core.interfaces.exception.InstanceIteratorException;
 import org.tc.osgi.bundle.fwmetamodel.core.interfaces.exception.MetaIteratorException;
-import org.tc.osgi.bundle.fwmetamodel.core.module.service.LoggerServiceProxy;
 import org.tc.osgi.bundle.fwmetamodel.core.type.MetaAttribute;
 import org.tc.osgi.bundle.fwmetamodel.core.type.MetaEntity;
 import org.tc.osgi.bundle.fwmetamodel.core.type.MetaModel;
 import org.tc.osgi.bundle.fwmetamodel.core.type.MetaRelation;
+import org.tc.osgi.bundle.fwmetamodel.module.service.LoggerServiceProxy;
 import org.tc.osgi.bundle.utils.module.service.impl.LoggerUtilsServiceImpl;
 
 /**

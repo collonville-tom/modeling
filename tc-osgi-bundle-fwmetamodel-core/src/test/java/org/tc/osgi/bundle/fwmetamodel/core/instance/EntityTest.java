@@ -2,9 +2,9 @@ package org.tc.osgi.bundle.fwmetamodel.core.instance;
 
 import org.junit.Assert;
 import org.junit.Test;
-import org.tc.osgi.bundle.fwmetamodel.core.module.service.LoggerServiceProxy;
 import org.tc.osgi.bundle.fwmetamodel.core.type.MetaAttribute;
 import org.tc.osgi.bundle.fwmetamodel.core.type.MetaEntity;
+import org.tc.osgi.bundle.fwmetamodel.module.service.LoggerServiceProxy;
 import org.tc.osgi.bundle.utils.module.service.impl.LoggerUtilsServiceImpl;
 
 /**

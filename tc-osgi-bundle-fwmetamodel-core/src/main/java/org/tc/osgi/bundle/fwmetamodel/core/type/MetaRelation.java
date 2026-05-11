@@ -7,7 +7,7 @@ import java.util.List;
 import org.tc.osgi.bundle.fwmetamodel.core.instance.Relation;
 import org.tc.osgi.bundle.fwmetamodel.core.interfaces.iterator.MetaIterator;
 import org.tc.osgi.bundle.fwmetamodel.core.interfaces.type.IMetaRelation;
-import org.tc.osgi.bundle.fwmetamodel.core.module.service.LoggerServiceProxy;
+import org.tc.osgi.bundle.fwmetamodel.module.service.LoggerServiceProxy;
 
 /**
  * MetaRelation.java.

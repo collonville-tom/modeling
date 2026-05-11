@@ -2,7 +2,7 @@ package org.tc.osgi.bundle.fwmetamodel.core.type;
 
 import org.tc.osgi.bundle.fwmetamodel.core.instance.Attribute;
 import org.tc.osgi.bundle.fwmetamodel.core.interfaces.type.IMetaAttribute;
-import org.tc.osgi.bundle.fwmetamodel.core.module.service.LoggerServiceProxy;
+import org.tc.osgi.bundle.fwmetamodel.module.service.LoggerServiceProxy;
 
 /**
  * MetaAttribute.java.
