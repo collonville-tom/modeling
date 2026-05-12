@@ -69,7 +69,7 @@ public class PrintModelOnFile extends IoCommand {
 		while (itInstruction.hasNext()) {
 
 			cmdCible = itInstruction.next();
-			if (cmdCible.getValue().getClass().toString().equals("class fwMetamodel.command.core.instance.CreateModel")) {
+			if (cmdCible.getValue().getClass().equals(CreateModel.class.getCanonicalName())) {
 				if (this.getCible().equals(((AbstractCommand) cmdCible).getName())) {
 					return cmdCible.getValue();
 				}
