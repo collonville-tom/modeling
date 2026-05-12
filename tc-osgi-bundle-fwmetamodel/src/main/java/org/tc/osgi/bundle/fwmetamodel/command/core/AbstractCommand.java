@@ -9,7 +9,7 @@ import org.tc.osgi.bundle.utils.interf.pattern.command.ICommand;
 * @author thomas collonvillé
 * @version 0.0.1
 */
-public abstract class AbstractCreatingCommand<T extends IType> implements ICommand, INamed {
+public abstract class AbstractCommand<T extends IType> implements ICommand, INamed {
 
 	/**
 	 * String name.
@@ -24,7 +24,7 @@ public abstract class AbstractCreatingCommand<T extends IType> implements IComma
 	 * CreatingCommand constructor.
 	 * @param name String
 	 */
-	public AbstractCreatingCommand(final String name) {
+	public AbstractCommand(final String name) {
 		setName(name);
 	}
 

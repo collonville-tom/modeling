@@ -1,6 +1,6 @@
 package org.tc.osgi.bundle.fwmetamodel.command.core.type;
 
-import org.tc.osgi.bundle.fwmetamodel.command.core.AbstractCreatingCommand;
+import org.tc.osgi.bundle.fwmetamodel.command.core.AbstractCommand;
 import org.tc.osgi.bundle.fwmetamodel.core.interfaces.type.IType;
 
 /**
@@ -8,7 +8,7 @@ import org.tc.osgi.bundle.fwmetamodel.core.interfaces.type.IType;
  * @author thomas collonvillé
  * @version 0.0.1
  */
-public abstract class AbstractTypeCreatingCommand<T extends IType> extends AbstractCreatingCommand<T> {
+public abstract class AbstractTypeCreatingCommand<T extends IType> extends AbstractCommand<T> {
 
 	/**
 	 * AbstractTypeCreatingCommand constructor.
