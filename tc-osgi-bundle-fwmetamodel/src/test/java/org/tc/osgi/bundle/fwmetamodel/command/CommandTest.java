@@ -19,6 +19,7 @@ import org.tc.osgi.bundle.fwmetamodel.command.core.type.CreateMetaModel;
 import org.tc.osgi.bundle.fwmetamodel.command.core.type.CreateMetaRelation;
 import org.tc.osgi.bundle.fwmetamodel.module.service.CommandRunnerUtilsProxy;
 import org.tc.osgi.bundle.utils.interf.pattern.command.exception.CommandExecutionException;
+import org.tc.osgi.bundle.utils.module.service.impl.CommandRunnerUtilsServiceImpl;
 
 /**
  * CommandTest.java.
@@ -136,11 +137,13 @@ public class CommandTest {
 		cListM.add("Belfort");
 		cListM.add("Distance");
 
-//		try {
-//			CommandRunnerUtilsProxy.getInstance().getRunner().exec();
-//		} catch (final CommandExecutionException e) {
-//			Assert.fail();
-//		}
+		try {
+					
+			CommandRunnerUtilsProxy.getInstance().setService(CommandRunnerUtilsServiceImpl.getInstance());
+			CommandRunnerUtilsProxy.getInstance().getRunner().exec();
+		} catch (final CommandExecutionException e) {
+			Assert.fail();
+		}
 
 	}
 }

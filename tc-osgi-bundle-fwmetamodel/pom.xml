@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<artifactId>tc-osgi-bundle-fwmetamodel-core</artifactId>
+	<artifactId>tc-osgi-bundle-fwmetamodel</artifactId>
 	<packaging>bundle</packaging>
 	<name>${project.artifactId}-${project.version}</name>
 	<description>Un frameworks pour faire de la metamodelisationsur la base du pattern Type Instance</description>
@@ -14,7 +14,7 @@
 		<snapshot>-SNAPSHOT</snapshot>
 		<utils.interfaces.version>0.11.0</utils.interfaces.version>
 		<utils.version>0.11.0</utils.version>
-		<fwmetamodel.core.interfaces.version>0.11.0</fwmetamodel.core.interfaces.version>
+		<fwmetamodel.interfaces.version>0.11.0</fwmetamodel.interfaces.version>
 	</properties>
 
 	<parent>
@@ -42,9 +42,9 @@
 		</dependency>
 		<dependency>
 			<groupId>org.tc.osgi.bundle.fwmetamodel</groupId>
-			<artifactId>tc-osgi-bundle-fwmetamodel-core-interfaces</artifactId>
+			<artifactId>tc-osgi-bundle-fwmetamodel-interfaces</artifactId>
 			<classifier>assembly</classifier>
-			<version>${fwmetamodel.core.interfaces.version}${snapshot}</version>
+			<version>${fwmetamodel.interfaces.version}${snapshot}</version>
 			<scope>compile</scope>
 		</dependency>
         <dependency>
